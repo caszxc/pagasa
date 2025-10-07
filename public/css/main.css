@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+
+/* Navbar */
+nav{
+    height: 80px;
+    background-color: red;
+    display: flex;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 20%;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+nav ul li{
+    list-style: none;
+}
