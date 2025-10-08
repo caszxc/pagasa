@@ -1,4 +1,11 @@
-<section class="">
-    <h1 class="">Welcome to Our Cooperative</h1>
-    <p class="">Working together for community growth and shared success.</p>
+<section class="hero">
+    <div class="container">
+        <h1 class="">Cooperation. Growth. Prosperity</h1>
+        <p class="">We’re more than a cooperative—we’re a family working hand in hand to achieve financial stability and shared success.</p>
+        <div class="button-container">
+            <a href="" class="learn-btn">LEARN MORE</a>
+            <p>|</p>
+            <a href="" class="member-btn">BE A MEMBER</a>
+        </div>
+    </div>   
 </section>

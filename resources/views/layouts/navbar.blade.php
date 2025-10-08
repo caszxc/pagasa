@@ -1,13 +1,13 @@
 <nav>
     <div class="logo-container">
-        <img src="{{ asset('images/logo.png')}}" alt="Pagasa Multi-Purpose Cooperative">
-        <h2>Pagasa Multi-Purpose Cooperative</h2>
+        <img src="{{ asset('images/logo.png')}}" alt="Pagasa Multi-Purpose Cooperative" class="logo">
+        <h2 class="name">PAGASA<br>MULTI-PURPOSE<br>COOPERATIVE</h2>
     </div>
     <ul>
-        <li>Home</li>
-        <li>Services</li>
-        <li>Membership</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
+        <li><a href="">HOME</a></li>
+        <li><a href="">SERVICES</a></li>
+        <li><a href="">MEMBERSHIP</a></li>
+        <li><a href="">ABOUT US</a></li>
+        <li><a href="">CONTACT US</a></li>
     </ul>
 </nav>

@@ -1,27 +1,52 @@
-body{
+*{
     margin: 0;
+    font-family: 'Roboto';
 }
 
 /* Navbar */
 nav{
-    height: 80px;
-    background-color: red;
+    height: 70px;
+    background-color: #2E7D32;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     display: flex;
+    top: 0;
+    position: sticky;
+    z-index: 10;
 }
 .logo-container{
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    background-color: white;
-    width: 20%;
+    background-color: #E8F5E9;
+    width: 23%;
 }
-
+.logo{
+    height: 100px;
+}
+.name{
+    color: #194613;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 5px;
+    flex: 0 0 auto;
+}
 nav ul{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 80%;
+    width: 77%;
 }
-
 nav ul li{
+    font-size: 17px;
     list-style: none;
 }
+nav ul li a{
+    text-decoration: none;
+    color: #C8E6C9;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #D5E222;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
