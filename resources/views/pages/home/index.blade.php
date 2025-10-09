@@ -9,4 +9,6 @@
 @section('content')
     @include('pages.home.hero')
     @include('pages.home.about')
+    @include('pages.home.member_benefits')
+    @include('pages.home.offers')
 @endsection

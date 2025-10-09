@@ -30,7 +30,7 @@
     text-decoration: none;
     color: white;
 }
-.hero .container .button-container .learn-btn{
+.hero .container .button-container .learn-more-btn{
     border: solid 2px #D5E222;
 }
 .hero .container .button-container p{
@@ -42,6 +42,244 @@
 
 /* About Section */
 .about{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
     background: url('/images/home/about-bg.jpg') center/cover no-repeat;
+}
+
+.about .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about .container .about-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+}
+
+.about .container .about-container .about-image img{
+    width: 500px;
+    max-width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.about .container .about-container .about-content{
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about .container .about-container .about-content .about-header{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about .container .about-container .about-content .about-header .about-subtitle{
+    color: #2E7D32; 
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.about .container .about-container .about-content .about-header .about-title{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #111;
+}
+
+.about .container .about-container .about-content .about-header .about-line{
+    width: 100%;
+    height: 4px;
+    background: #111;
+    border-radius: 2px;
+}
+
+.about .container .about-container .about-content .about-description p{
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #222;
+    text-align: justify;
+}
+
+.about .container .about-container .about-content .about-button{
+    margin-top: 25px;
+}
+
+.about .container .about-container .about-content .about-button .learn-more-btn{
+    padding: 12px 28px;
+    border: 2px solid #111;
+    border-radius: 30px;
+    color: #111;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.about .container .mvc-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+.about .container .mvc-container .mvc-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about .container .mvc-container .mvc-content .mvc-title{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #111;
+}
+
+.about .container .mvc-container .mvc-content .mvc-description{
+    font-size: 1rem;
+}
+
+.about .container .mvc-container .mvc-card-container{
+    display: flex;
+    gap: 40px;
+    padding: 0 60px;
+}
+
+.about .container .mvc-container .mvc-card-container .mvc-card{
+    position: relative;
+    width: 350px;
+    padding: 80px 25px 40px;
+    text-align: center;
+    color: #2e7d32;
+    font-weight: 600;
+    background: transparent;
+    border-radius: 50px;
+}
+
+.about .container .mvc-container .mvc-card-container .mvc-card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 4px solid #04DE3B;
+    border-top: none; 
+    border-radius: 50px;
+    pointer-events: none;
+}
+
+.about .container .mvc-container .mvc-card-container .mvc-card .mvc-icon{
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about .container .mvc-container .mvc-card-container .mvc-card .mvc-icon img{
+    width: 100px;
+    height: auto;
+}
+
+/* Membership Benefits Section */
+.member-benefits{
+    padding: 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/images/home/member-benefits-bg.jpg') center/cover no-repeat;
+    color: white;
+}
+
+.member-benefits .benefits-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.member-benefits .benefits-container .benefits-header{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.member-benefits .benefits-container .benefits-header .benefits-title{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.member-benefits .benefits-container .benefits-header .benefits-description{
+    font-size: 1rem;
+}
+
+.member-benefits .benefits-container .benefits-list{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.member-benefits .benefits-container .benefits-list .benefits-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.member-benefits .benefits-container .benefits-list .benefits-row .benefit-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.member-benefits .benefits-container .benefits-list .benefits-row .benefit-item .benefit-icon {
+  width: 100px;
+  height: 100px;
+  background: #C9F2C7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.member-benefits .benefits-container .benefits-list .benefits-row .benefit-item .benefit-icon img {
+  width: 55px;
+  height: 55px;
+}
+
+.member-benefits .benefits-container .benefits-list .benefits-row .benefit-item:hover .benefit-icon {
+  transform: translateY(-5px);
+}
+
+.member-benefits .benefits-container .benefits-list .benefits-row .benefit-item .benefit-title {
+  font-weight: 700;
+  color: #fff;
+}
+
+.member-benefits .benefits-container .benefits-list .benefits-row .benefit-item .benefit-text {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* Offers Section */
+.offers{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url('/images/home/offers-bg.jpg') center/cover no-repeat;
 }
