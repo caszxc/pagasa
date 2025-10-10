@@ -11,4 +11,6 @@
     @include('pages.home.about')
     @include('pages.home.member_benefits')
     @include('pages.home.offers')
+    @include('pages.home.cta')
+    @include('pages.home.faq')
 @endsection

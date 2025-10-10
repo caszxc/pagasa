@@ -150,19 +150,22 @@
 
 .about .container .mvc-container .mvc-card-container{
     display: flex;
-    gap: 40px;
-    padding: 0 60px;
+    gap: 77px;
+    padding: 0 94px;
 }
 
 .about .container .mvc-container .mvc-card-container .mvc-card{
     position: relative;
     width: 350px;
-    padding: 80px 25px 40px;
+    padding: 80px 25px 68px;
     text-align: center;
     color: #2e7d32;
     font-weight: 600;
     background: transparent;
     border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .about .container .mvc-container .mvc-card-container .mvc-card::before{
@@ -282,4 +285,182 @@
     display: flex;
     flex-direction: column;
     background: url('/images/home/offers-bg.jpg') center/cover no-repeat;
+}
+
+.offers .offers-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+.offers .offers-container .offers-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.offers .offers-container .offers-header .offers-title{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #111;
+}
+
+.offers .offers-container .offers-header .offers-description{
+    font-size: 1rem;
+}
+
+.offers .offers-container .offers-card-container{
+    display: flex;
+    gap: 40px;
+    padding: 0 100px;
+}
+
+.offers .offers-container .offers-card-container .offer-card{
+    background-color: white;
+    padding: 36px 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.offers .offers-container .offers-card-container .offer-card .offer-card-icon{
+    width: 60px;
+}
+
+.offers .offers-container .offers-card-container .offer-card .offer-card-title{
+    font-size: 1rem;
+}
+
+.offers .offers-container .offers-card-container .offer-card .offer-card-description{
+    color: #646464;
+    font-size: 0.8rem;
+}
+
+
+/* Call to Action Section */
+.cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('/images/home/cta-bg.jpg') center/cover no-repeat;
+}
+
+.cta .cta-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 67px 0px;
+}
+
+.cta .cta-container .cta-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta .cta-container .cta-header .cta-title{
+    font-size: 100px;
+    color: #D4FFD6;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.cta .cta-container .cta-header .cta-description{
+    color: #333333;
+}
+
+.cta .cta-container .cta-btn{
+    color: #FBC02D;
+    padding: 15px 46px;
+    text-decoration: none;
+    border: 2px solid #FBC02D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+}
+
+
+/* Frequently Asked Question */
+.faq{
+    height: 100vh;
+    background-color: #E8F5E9;
+    display: flex;
+    justify-content: center;
+    padding: 0 112px;
+}
+
+.faq .faq-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.faq .faq-container .faq-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.faq .faq-container .faq-header .faq-subtitle{
+    color: #2E7D32; 
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.faq .faq-container .faq-header .faq-title{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #111;
+}
+
+.faq .faq-container .accordion-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq .faq-container .accordion-container .faq-item{
+    background-color: #d9d9d9;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.faq .faq-container .accordion-container .faq-item.active .faq-answer {
+    display: flex;
+}
+
+.faq .faq-container .accordion-container .faq-item .faq-question{
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq .faq-container .accordion-container .faq-item .faq-answer {
+    background-color: #f0eeee;
+    padding: 15px;
+    display: none;
+    font-size: 14px;
+    color: #555;
 }

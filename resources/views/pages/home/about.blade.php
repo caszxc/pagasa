@@ -11,11 +11,7 @@
                     <div class="about-line"></div>
                 </div>
                 <div class="about-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Pagasa Multi-Purpose Cooperative is a community-based cooperative duly registered in Cooperative Development Authority (CDA) with Registration No. 9520-16007936 and located at No. 5, San Guillermo St., Karuhatan, Valenzuela City (Head Office); 115 E. Rodriguez Street, Barangay Santulan, Malabon City (Satellite Office) and No.174 Kaingin Rd., Corner Old Samson Rd., Brgy. Apolonio Samson Rd., Balintawak, Quezon City (Satellite Office). </p>
                 </div>
                 <div class="about-button">
                     <a href="" class="learn-more-btn">LEARN MORE</a>
