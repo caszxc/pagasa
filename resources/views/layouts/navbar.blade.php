@@ -4,8 +4,8 @@
         <h2 class="name">PAGASA<br>MULTI-PURPOSE<br>COOPERATIVE</h2>
     </div>
     <ul>
-        <li><a href="">HOME</a></li>
-        <li><a href="">SERVICES</a></li>
+        <li><a href="{{route('home')}}">HOME</a></li>
+        <li><a href="{{route('services')}}">SERVICES</a></li>
         <li><a href="">MEMBERSHIP</a></li>
         <li><a href="">ABOUT US</a></li>
         <li><a href="">CONTACT US</a></li>

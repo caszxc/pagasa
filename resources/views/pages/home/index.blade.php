@@ -13,4 +13,9 @@
     @include('pages.home.offers')
     @include('pages.home.cta')
     @include('pages.home.faq')
+    @include('pages.home.affiliation')
+@endsection
+
+@section('scripts')
+    <script src="{{ asset('js/home.js') }}"></script>
 @endsection

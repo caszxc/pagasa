@@ -6,9 +6,9 @@
         </div>
         <div class="accordion-container">
             <div class="faq-item active">
-                <button class="faq-question">
+                <button class="faq-question" aria-expanded="true">
                 Question
-                <span class="icon">&#9650;</span>
+                <span class="icon" aria-hidden="true">&#9660;</span>
                 </button>
                 <div class="faq-answer">
                     <p>Answer</p>
@@ -16,9 +16,9 @@
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">
+                <button class="faq-question" aria-expanded="false">
                 Question
-                <span class="icon">&#9660;</span>
+                <span class="icon" aria-hidden="true">&#9660;</span>
                 </button>
                 <div class="faq-answer">
                     <p>Answer</p>
@@ -26,9 +26,9 @@
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">
+                <button class="faq-question" aria-expanded="false">
                 Question
-                <span class="icon">&#9660;</span>
+                <span class="icon" aria-hidden="true">&#9660;</span>
                 </button>
                 <div class="faq-answer">
                     <p>Answer</p>
@@ -36,9 +36,9 @@
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">
+                <button class="faq-question" aria-expanded="false">
                 Question
-                <span class="icon">&#9660;</span>
+                <span class="icon" aria-hidden="true">&#9660;</span>
                 </button>
                 <div class="faq-answer">
                     <p>Answer</p>
@@ -46,14 +46,16 @@
             </div>
 
             <div class="faq-item">
-                <button class="faq-question">
+                <button class="faq-question" aria-expanded="false">
                 Question
-                <span class="icon">&#9660;</span>
+                <span class="icon" aria-hidden="true">&#9660;</span>
                 </button>
                 <div class="faq-answer">
                     <p>Answer</p>
                 </div>
             </div>
+
+            
         </div>
     </div>
 </section>
