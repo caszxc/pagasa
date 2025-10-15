@@ -1,0 +1,91 @@
+.hero{
+    height: calc(100vh - 70px);
+}
+
+
+
+/* Savings Section */
+.savings{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.savings .savings-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.savings .savings-content .savings-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.savings .savings-content .savings-header .savings-title{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #111;
+}
+
+.savings .savings-content .savings-header .savings-description{
+    font-size: 1rem;
+}
+
+.savings .savings-content .savings-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.savings .savings-content .savings-card-container .group-row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.savings .savings-content .savings-card-container .group-row .savings-card{
+    flex: 1 1 calc(50% - 20px);
+    height: 200px;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.savings .savings-content .savings-card-container .group-row .savings-card .savings-name{
+    font-size: 1.5rem;
+}
+
+/* Loans Section */
+.loans{
+    height: 100vh;
+    background-color: blue;
+}
+
+
+
+/* Benefits Section */
+.benefits{
+    height: 100vh;
+    background-color: orange;
+}
+
+
+
+/* Others Section */
+.others{
+    height: 100vh;
+    background-color: gray;
+}

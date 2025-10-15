@@ -1,3 +1,3 @@
-<div class="page-banner" style="background: url('{{ asset('/images/banner-bg.jpg')}}) center/cover no-repeat;">
-    <h1>{{ $title }}</h1>
+<div class="page-banner">
+    <h1 class="title">{{ $title }}</h1>
 </div>

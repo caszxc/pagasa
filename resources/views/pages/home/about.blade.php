@@ -53,9 +53,7 @@
                     </div>
                     <h3 class="mvc-title">COOPERATIVE VALUES</h3>
                     <p class="mvc-text">
-                        The preferred large cooperative in Valenzuela providing innovative products
-                        and efficient services uplifting the lives of members and more marginalized
-                        sector in the community.
+                        The cooperative upholds the values of self-help, self-responsibility, equity, democracy, equality, honesty, openness, caring for others, social responsibility, solidarity, and being pro-active in all its undertakings.
                     </p>
                 </div>
             </div>

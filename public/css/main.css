@@ -138,3 +138,19 @@ footer{
 }
 
 
+/* Banner */
+.page-banner{
+    margin-top: 16px;
+    background: url('/images/banner-bg.jpg') center/cover no-repeat;
+    color: #D4FFD6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+}
+
+.page-banner .title{
+    font-size: 100px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+

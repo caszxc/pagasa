@@ -6,8 +6,8 @@
     <ul>
         <li><a href="{{route('home')}}">HOME</a></li>
         <li><a href="{{route('services')}}">SERVICES</a></li>
-        <li><a href="">MEMBERSHIP</a></li>
-        <li><a href="">ABOUT US</a></li>
-        <li><a href="">CONTACT US</a></li>
+        <li><a href="{{route('membership')}}">MEMBERSHIP</a></li>
+        <li><a href="{{route('about')}}">ABOUT US</a></li>
+        <li><a href="{{route('contact')}}">CONTACT US</a></li>
     </ul>
 </nav>
