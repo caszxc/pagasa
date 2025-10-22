@@ -2,6 +2,7 @@
     height: calc(100vh - 70px);
     display: flex;
     flex-direction: column;
+    background-color: #E8F5E9;
 }
 
 .benefits-container{
@@ -9,10 +10,18 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     flex: 1;
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+}
 
+.benefits-header{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
 }
 
 .cards-container{
@@ -35,17 +44,15 @@
 
 /* Qualification */
 .qualification{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: red;
     padding: 80px;
 }
 
 .qualification-header{
-    background-color: blue;
     display: flex;
+    gap: 10px;
 }
 
 .header-icon{
@@ -59,30 +66,58 @@
 }
 
 .req-container{
-    background-color: green;
     padding: 20px 50px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    flex: 1;
 }
 
-.req-group{
-    background-color: aqua;
+.req-group {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    align-items: stretch; /* make all cards same height */
+    gap: 20px;
 }
 
-.req-card{
+.req-card {
+    flex: 1; /* make all cards in the row take equal width */
+    max-width: 350px;
     display: flex;
-    gap: 10px;
-    padding: 10px 10px 30px;
+    justify-content: flex-start;
     align-items: flex-start;
-    background-color: antiquewhite;
+    gap: 10px;
+    padding: 20px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-height: 100px; /* optional: set a consistent height */
 }
 
-.icon-con{
-    background-color: yellow;
+.icon-con {
+    background-color: #2E7D32;
     padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.req-content {
+    flex: 1; /* allows text to fill remaining space evenly */
+}
+
+.req-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.req-description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.steps{
+    height: 100vh;
+    background-color: #E8F5E9;
 }

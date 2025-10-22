@@ -9,3 +9,7 @@
 @section('content')
     @include('pages.contact.hero')
 @endsection
+
+@section('scripts')
+    <script src="{{ asset('js/contact.js') }}"></script>
+@endsection

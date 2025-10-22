@@ -4,7 +4,14 @@
         <p class="banner-description">Learn how to become a valued member of our cooperative. Explore the benefits, requirements, and steps to join our growing community committed to mutual success.</p>
     </div>
     <div class="benefits-container">
-        <h2>Benefits of being a member</h2>
+        <div class="benefits-header">
+            <img src="{{asset('images/icons/benefits-icon.png')}}" alt="" class="header-icon">
+            <div class="header-content">
+                <h2>Benefits of being a member</h2>
+                <p class="description">Mga Kinakailangan para sa Miyembro</p>
+            </div>
+        </div>
+        
         <div class="cards-container">
             <div class="benefits-card">
                 <h4 class="benefit-title">Taunang tubo sa Share Capital</h4>
