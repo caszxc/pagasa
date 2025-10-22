@@ -12,19 +12,34 @@
 
             <div class="loans-wrapper" id="loanWrapper">
                 <div class="loans-item">
-                    <h3 class="loans-name">Personal Loan</h3>
+                    <h3 class="loans-name">Productive Loan</h3>
                 </div>
                 <div class="loans-item">
-                    <h3 class="loans-name">Business Loan</h3>
-                </div>
-                <div class="loans-item">
-                    <h3 class="loans-name">Emergency Loan</h3>
+                    <h3 class="loans-name">Providential Loan</h3>
                 </div>
                 <div class="loans-item">
                     <h3 class="loans-name">Educational Loan</h3>
                 </div>
                 <div class="loans-item">
-                    <h3 class="loans-name">Agricultural Loan</h3>
+                    <h3 class="loans-name">Business Car Loan</h3>
+                </div>
+                <div class="loans-item">
+                    <h3 class="loans-name">Motorcycle Loan</h3>
+                </div>
+                <div class="loans-item">
+                    <h3 class="loans-name">Jewelry Pledge Loan</h3>
+                </div>
+                <div class="loans-item">
+                    <h3 class="loans-name">Medical/Emergency Loan</h3>
+                </div>
+                <div class="loans-item">
+                    <h3 class="loans-name">Petty Cash Loan</h3>
+                </div>
+                <div class="loans-item">
+                    <h3 class="loans-name">Pensioner's Pledge Loan</h3>
+                </div>
+                <div class="loans-item">
+                    <h3 class="loans-name">Promo Loan</h3>
                 </div>
             </div>
 

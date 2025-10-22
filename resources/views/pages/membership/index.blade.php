@@ -8,5 +8,8 @@
 
 @section('content')
     @include('pages.membership.hero')
+    @include('pages.membership.qualification')
+    @include('pages.membership.steps')
+    @include('pages.membership.downloadable')
 @endsection
 

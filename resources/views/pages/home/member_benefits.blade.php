@@ -13,7 +13,7 @@
                     <div class="benefit-icon">
                         <img src="{{asset('images/icons/share-capital-icon.png')}}" alt="Share Capital">
                     </div>
-                    <h3 class="benefit-title">Taunang tubo sa Share Capital</h3>
+                    <h4 class="benefit-title">Taunang tubo sa Share Capital</h4>
                     <p class="benefit-text">Mas lumalago ang puhunan mo taon-taon.</p>
                 </div>
 

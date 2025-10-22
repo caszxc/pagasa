@@ -7,6 +7,9 @@
 @endsection
 
 @section('content')
-    @include('pages.About.hero')
+    @include('pages.about.hero')
+    @include('pages.about.history')
+    @include('pages.about.awards')
+    @include('pages.about.other_business')
 @endsection
 
