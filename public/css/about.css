@@ -1,4 +1,262 @@
 .hero{
-    height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
 }
 
+.about-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 90px;
+    padding: 40px;
+}
+
+.about-container .about-con{
+    display: flex;
+    gap: 60px;
+}
+
+.about-container .about-image img{
+    width: 500px;
+    max-width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.about-container .about-content{
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-container .about-content .about-header{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about-container .about-content .about-header .about-subtitle{
+    color: #2E7D32; 
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.about-container .about-content .about-header .about-title{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #111;
+}
+
+.about-container .about-content .about-header .about-line{
+    width: 100%;
+    height: 4px;
+    background: #111;
+    border-radius: 2px;
+}
+
+.about-container .about-content .about-description p{
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #222;
+    text-align: justify;
+}
+
+
+
+.history {
+  text-align: center;
+  background: #edf7ed;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  gap: 20px;
+}
+
+.history-header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.timeline-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.timeline-desc {
+  font-size: 14px;
+  color: #444;
+}
+
+.timeline {
+  position: relative;
+  flex: 1;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 62px; /* Start at the first circle (adjusted for padding and circle position) */
+  left: 50%;
+  width: 4px;
+  height: calc(100% - 120px); /* Reduce height to stop at the last circle */
+  background: #ccc;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-content {
+  border: 2px solid #006b2f;
+  padding: 20px;
+  background: #edf7ed;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.timeline-year {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: #0a6b2e;
+}
+
+.timeline-item.left .timeline-year {
+  right: -80px;
+}
+
+.timeline-item.right .timeline-year {
+  left: -80px;
+}
+
+/* Circles on the line */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  background: #0a6b2e;
+  border-radius: 50%;
+  border: 3px solid #edf7ed;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.timeline-item.left::before {
+  left: calc(100% - 11px); /* Aligns circle to the right edge of left items */
+}
+
+.timeline-item.right::before {
+  left: -11px; /* Aligns circle to the left edge of right items */
+}
+
+
+
+.awards {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.award-subtitle {
+  color: #000;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.award-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.award-title span {
+  color: #0a6b2e;
+  font-family: "Great Vibes", cursive;
+  font-weight: 500;
+}
+
+/* Container for all awards */
+.award-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Individual award item */
+.award-item {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  gap: 20px;
+}
+
+/* Award image inside circular leaves */
+.award-image {
+  width: 120px;
+  height: 120px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Laurel_wreath.svg/240px-Laurel_wreath.svg.png') no-repeat center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.award-image img {
+  width: 65%;
+  height: auto;
+}
+
+/* Award details */
+.award-info {
+  text-align: left;
+  flex: 1;
+}
+
+.award-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0a6b2e;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.award-info h4::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #ccc;
+}
+
+.award-info p {
+  font-size: 14px;
+  color: #333;
+  margin-top: 8px;
+  line-height: 1.4em;
+}

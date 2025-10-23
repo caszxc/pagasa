@@ -8,6 +8,7 @@
 
 @section('content')
     @include('pages.contact.hero')
+    @include('pages.contact.locations')
 @endsection
 
 @section('scripts')

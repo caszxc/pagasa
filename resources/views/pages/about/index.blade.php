@@ -13,3 +13,6 @@
     @include('pages.about.other_business')
 @endsection
 
+@section('scripts')
+    <script src="{{ asset('js/about.js') }}"></script>
+@endsection
