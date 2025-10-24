@@ -1,4 +1,4 @@
-<section class="loans">
+<section class="loans" id="loans">
     <div class="loans-content">
         <div class="loans-header">
             <h2 class="loans-title">Loans</h2>

@@ -1,4 +1,4 @@
-<section class="benefits">
+<section class="benefits" id="benefits">
     <div class="benefits-content">
         <div class="benefits-hex-grid">
             <div class="hex-row">

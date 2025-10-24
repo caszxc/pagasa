@@ -1,4 +1,4 @@
-<section class="other-services">
+<section class="other-services" id="others">
     <div class="other-services-content">
         <div class="section-header">
             <h2 class="section-title">Other Services</h2>

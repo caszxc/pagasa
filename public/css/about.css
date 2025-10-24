@@ -260,3 +260,134 @@
   margin-top: 8px;
   line-height: 1.4em;
 }
+
+
+.other-businesses {
+  text-align: center;
+  position: relative;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #edf7ed;
+}
+
+.business-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #2c3e50;
+  position: relative;
+}
+
+.business-title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: #2E7D32;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* Radial Layout Container */
+.radial-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+/* Center Logo (Coop) */
+.coop-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 140px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #2E7D32;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  z-index: 2;
+  border: 6px solid #2E7D32;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Business Nodes */
+.business-node {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2c3e50;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  transition: all 0.3s ease;
+  z-index: 5;
+  padding: 12px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.business-node:hover {
+  transform: translateY(-8px) scale(1.08);
+  box-shadow:0 15px 35px rgba(46,125,50,.25);
+  z-index: 2;
+}
+
+.business-node::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border: 3px dashed #2E7D32;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.3);
+  animation: pulse 2s infinite;
+}
+
+.business-node:hover::before {
+  opacity: 0.3;
+}
+
+@keyframes pulse {
+  0% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.4; }
+  100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
+}
+
+/* Icons (using simple SVG or emoji for demo) */
+.business-node .icon {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+/* Connecting Lines */
+.connection-line {
+  position: absolute;
+  background: linear-gradient(45deg, transparent, #e74c3c, transparent);
+  height: 3px;
+  transform-origin: left center;
+  z-index: 1;
+}
+
+/* Position each node around the center */
+#node1 { top: 10px; left: 50%; transform: translateX(-50%); } /* Top */
+#node2 { top: 50%; right: 10px; transform: translateY(-50%); } /* Right */
+#node3 { bottom: 10px; left: 50%; transform: translateX(-50%); } /* Bottom */
+#node4 { top: 50%; left: 10px; transform: translateY(-50%); } /* Left */

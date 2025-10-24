@@ -1,8 +1,60 @@
-.hero{
-    height: calc(100vh - 70px);
+.hero {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #f8fafc, #fff);
 }
 
+/* Circle navigation container */
+.circle-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
 
+/* Each circle */
+.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color: #0056b3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Text (hidden by default, appears on hover) */
+.circle span {
+  position: absolute;
+  bottom: -35px;
+  font-size: 1rem;
+  color: #333;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+/* Hover effects */
+.circle:hover {
+  background-color: #007bff;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.circle:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Savings Section */
 .savings{
