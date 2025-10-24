@@ -272,22 +272,18 @@
   background-color: #edf7ed;
 }
 
+.business-header{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 40%;
+}
+
 .business-title {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 40px;
   color: #2c3e50;
   position: relative;
-}
-
-.business-title::after {
-  content: '';
-  width: 80px;
-  height: 4px;
-  background: #2E7D32;
-  display: block;
-  margin: 15px auto 0;
-  border-radius: 2px;
 }
 
 /* Radial Layout Container */

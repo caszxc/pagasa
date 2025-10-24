@@ -2,7 +2,7 @@
     <div class="offers-container">
         <div class="offers-header">
             <h2 class="offers-title">What We Offer</h2>
-            <p class="offers-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="offers-description">                Pagasa Multi-Purpose Cooperative provides a wide range of financial and community services designed to empower our members — helping them save, grow, and secure a better future.</p>
         </div>
         <div class="offers-card-container">
             <div class="offer-card">

@@ -11,10 +11,10 @@
                     <div class="about-line"></div>
                 </div>
                 <div class="about-description">
-                    <p>Pagasa Multi-Purpose Cooperative is a community-based cooperative duly registered in Cooperative Development Authority (CDA) with Registration No. 9520-16007936 and located at No. 5, San Guillermo St., Karuhatan, Valenzuela City (Head Office); 115 E. Rodriguez Street, Barangay Santulan, Malabon City (Satellite Office) and No.174 Kaingin Rd., Corner Old Samson Rd., Brgy. Apolonio Samson Rd., Balintawak, Quezon City (Satellite Office). </p>
+                    <p>Pagasa Multi-Purpose Cooperative (PMPC) is a member-owned organization committed to empowering communities through sustainable financial and livelihood services. Guided by the spirit of cooperation, PMPC provides accessible loans, savings, and business opportunities to help members achieve financial stability and growth. Together, we build a brighter future—rooted in trust, unity, and shared progress.</p>
                 </div>
                 <div class="about-button">
-                    <a href="" class="learn-more-btn">LEARN MORE</a>
+                    <a href="{{route('about')}}" class="learn-more-btn">LEARN MORE</a>
                 </div>
             </div>
         </div>

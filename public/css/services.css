@@ -20,7 +20,7 @@
   position: relative;
   width: 120px;
   height: 120px;
-  background-color: #0056b3;
+  background-color: #2E7D32;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -46,7 +46,7 @@
 
 /* Hover effects */
 .circle:hover {
-  background-color: #007bff;
+  background-color: #47aa4c;
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }

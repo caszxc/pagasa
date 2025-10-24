@@ -1,5 +1,9 @@
 <section class="other-businesses">
-  <h2 class="business-title">Other Businesses</h2>
+  <div class="business-header">
+      <h2 class="business-title">Other Businesses</h2>
+      <p class="business-description">
+      Beyond financial services, Pagasa Multi-Purpose Cooperative also operates various community-driven businesses that provide convenience, livelihood, and support to its members and the public.</p>
+  </div>
   
   <div class="radial-container">
     
@@ -38,6 +42,5 @@
       <!-- Line to Left -->
       <line x1="250" y1="250" x2="85" y2="250" stroke="#2E7D32" stroke-width="3" stroke-dasharray="8,6" opacity="0.6"/>
     </svg>
-    
   </div>
 </section>

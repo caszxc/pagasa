@@ -6,16 +6,16 @@
         </div>
 
         <ul class="footer-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Membership</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="{{route('home')}}">Home</a></li>
+            <li><a href="{{route('services')}}">Services</a></li>
+            <li><a href="{{route('membership')}}">Membership</a></li>
+            <li><a href="{{route('about')}}">About Us</a></li>
+            <li><a href="{{route('contact')}}">Contact Us</a></li>
         </ul>
 
         <div class="footer-social">
-            <a href="#"><img src="{{asset('images/icons/facebook-icon.png')}}" alt="Facebook"></a>
-            <a href="#"><img src="{{asset('images/icons/tiktok-icon.png')}}"></a>
+            <a href="https://web.facebook.com/pagasamultipurpose.cooperative" target="_blank"><img src="{{asset('images/icons/facebook-icon.png')}}" alt="Facebook"></a>
+            <a href="https://www.tiktok.com/@pagasampc?is_from_webapp=1&sender_device=pc" target="_blank"><img src="{{asset('images/icons/tiktok-icon.png')}}"></a>
         </div>
 
         <hr class="footer-line">
