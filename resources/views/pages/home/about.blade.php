@@ -2,8 +2,13 @@
     <div class="container">
         <div class="about-container">
             <div class="about-image">
-                <img src="{{ asset('images/home/hero-bg.jpg')}}" alt="">
+                <div class="image-grid">
+                    <img src="{{ asset('images/home/picture3.png') }}" alt="About Image 1">
+                    <img src="{{ asset('images/home/picture2.png') }}" alt="About Image 2">
+                    <img src="{{ asset('images/home/picture1.png') }}" alt="About Image 3">
+                </div>
             </div>
+
             <div class="about-content">
                 <div class="about-header">
                     <h4 class="about-subtitle">ABOUT US</h4>
@@ -24,7 +29,7 @@
                 <p class="mvc-description">Building trust and identity for our members.</p>
             </div>
             <div class="mvc-card-container">
-                <div class="mvc-card">
+                <div class="mvc-card" data-aos="zoom-in">
                     <div class="mvc-icon">
                         <img src="{{asset('images/icons/mission-icon.png')}}" alt="Mission Icon">
                     </div>
@@ -35,7 +40,7 @@
                     </p>
                 </div>
 
-                <div class="mvc-card">
+                <div class="mvc-card" data-aos="zoom-in">
                     <div class="mvc-icon">
                         <img src="{{asset('images/icons/vision-icon.png')}}" alt="Vision Icon">
                     </div>
@@ -47,7 +52,7 @@
                     </p>
                 </div>
 
-                <div class="mvc-card">
+                <div class="mvc-card" data-aos="zoom-in">
                     <div class="mvc-icon">
                         <img src="{{asset('images/icons/values-icon.png')}}" alt="Cooperative Values Icon">
                     </div>

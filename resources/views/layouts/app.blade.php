@@ -15,6 +15,9 @@
 
     <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
     <!-- Page-specific CSS -->
     @yield('styles')
 </head>
@@ -26,6 +29,17 @@
     </main>
 
     @include('layouts.footer')
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialise AOS – you can tweak options here
+        AOS.init({
+            duration: 800,      // animation duration
+            easing: 'ease-out', // smooth easing
+            once: true,         // animate only once
+            offset: 120         // trigger a little earlier
+        });
+    </script>
 
     <!-- Page-specific scripts -->
     @yield('scripts')
