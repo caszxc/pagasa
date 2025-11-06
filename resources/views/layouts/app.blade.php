@@ -34,10 +34,10 @@
     <script>
         // Initialise AOS – you can tweak options here
         AOS.init({
-            duration: 800,      // animation duration
-            easing: 'ease-out', // smooth easing
+            duration: 900,      // animation duration
+            easing: 'ease-out-cubic', // smooth easing
             once: true,         // animate only once
-            offset: 120         // trigger a little earlier
+            offset: 100         // trigger a little earlier
         });
     </script>
 

@@ -1,6 +1,7 @@
 <section class="member-benefits">
     <div class="benefits-container">
-        <div class="benefits-header">
+        <!-- Header with fade-left -->
+        <div class="benefits-header" data-aos="fade-left" data-aos-delay="100">
             <h2 class="benefits-title">Membership Benefits</h2>
             <p class="benefits-description">
                 As a valued member, you gain access to financial growth, protection, and community support designed to uplift your livelihood and future.
@@ -8,8 +9,9 @@
         </div>
 
         <div class="benefits-list">
-            <div class="benefits-row">
-                <div class="benefit-item">
+            <!-- First Row -->
+            <div class="benefits-row" data-aos="fade" data-aos-delay="400">
+                <div class="benefit-item" data-aos="fade" data-aos-delay="300">
                     <div class="benefit-icon">
                         <img src="{{asset('images/icons/share-capital-icon.png')}}" alt="Share Capital">
                     </div>
@@ -17,7 +19,7 @@
                     <p class="benefit-text">Your investment grows every year through shared earnings.</p>
                 </div>
 
-                <div class="benefit-item">
+                <div class="benefit-item" data-aos="fade" data-aos-delay="500">
                     <div class="benefit-icon">
                         <img src="{{asset('images/icons/patronage-refund-icon.png')}}" alt="Patronage Refund">
                     </div>
@@ -26,8 +28,9 @@
                 </div>
             </div>
 
-            <div class="benefits-row center">
-                <div class="benefit-item">
+            <!-- Center Row (Single Item) -->
+            <div class="benefits-row center" data-aos="fade" data-aos-delay="600">
+                <div class="benefit-item" data-aos="fade" data-aos-delay="600">
                     <div class="benefit-icon">
                         <img src="{{asset('images/icons/savings-icon.png')}}" alt="Savings">
                     </div>
@@ -36,8 +39,9 @@
                 </div>
             </div>
 
-            <div class="benefits-row">
-                <div class="benefit-item">
+            <!-- Last Row -->
+            <div class="benefits-row" data-aos="fade" data-aos-delay="700">
+                <div class="benefit-item" data-aos="fade" data-aos-delay="700">
                     <div class="benefit-icon">
                         <img src="{{asset('images/icons/insurance-icon.png')}}" alt="Insurance">
                     </div>
@@ -45,7 +49,7 @@
                     <p class="benefit-text">Enjoy peace of mind knowing you and your family are protected.</p>
                 </div>
 
-                <div class="benefit-item">
+                <div class="benefit-item" data-aos="fade" data-aos-delay="800">
                     <div class="benefit-icon">
                         <img src="{{asset('images/icons/helping-hands-icon.png')}}" alt="Member Assistance">
                     </div>

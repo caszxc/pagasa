@@ -1,10 +1,23 @@
 <section class="cta">
     <div class="cta-container">
-        <div class="cta-header">
+
+        <!-- Header -->
+        <div class="cta-header"
+             data-aos="zoom-in"
+             data-aos-delay="300">
             <h1 class="cta-title">JOIN US</h1>
-            <p class="cta-description">Be part of a cooperative that works for you and your community</p>
+            <p class="cta-description">
+                Be part of a cooperative that works for you and your community
+            </p>
         </div>
-        
-        <a class="cta-btn" href="{{route('membership')}}">Become a Member Today</a>
+
+        <!-- CTA Button with Pulse Effect -->
+        <a href="{{ route('membership') }}"
+           class="cta-btn pulse-btn"
+           data-aos="fade-up"
+           data-aos-delay="600">
+            Become a Member Today
+        </a>
+
     </div>
 </section>

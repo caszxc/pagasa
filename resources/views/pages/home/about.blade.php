@@ -1,35 +1,57 @@
 <section class="about">
     <div class="container">
         <div class="about-container">
-            <div class="about-image">
+            <div class="about-image"
+                 data-aos="fade-right"
+                 data-aos-delay="200">
                 <div class="image-grid">
-                    <img src="{{ asset('images/home/picture3.png') }}" alt="About Image 1">
-                    <img src="{{ asset('images/home/picture2.png') }}" alt="About Image 2">
-                    <img src="{{ asset('images/home/picture1.png') }}" alt="About Image 3">
+                    <img src="{{ asset('images/home/picture3.png') }}" alt="About Image 1"
+                         data-aos="flip-left"
+                         data-aos-delay="300">
+                    <img src="{{ asset('images/home/picture2.png') }}" alt="About Image 2"
+                         data-aos="flip-left"
+                         data-aos-delay="450">
+                    <img src="{{ asset('images/home/picture1.png') }}" alt="About Image 3"
+                         data-aos="flip-left"
+                         data-aos-delay="600">
                 </div>
             </div>
 
             <div class="about-content">
-                <div class="about-header">
+                <div class="about-header"
+                     data-aos="fade-down"
+                     data-aos-delay="400">
                     <h4 class="about-subtitle">ABOUT US</h4>
                     <h2 class="about-title">Pagasa Multi-Purpose Cooperative</h2>
                     <div class="about-line"></div>
                 </div>
-                <div class="about-description">
-                    <p>Pagasa Multi-Purpose Cooperative (PMPC) is a member-owned organization committed to empowering communities through sustainable financial and livelihood services. Guided by the spirit of cooperation, PMPC provides accessible loans, savings, and business opportunities to help members achieve financial stability and growth. Together, we build a brighter future—rooted in trust, unity, and shared progress.</p>
+                <div class="about-description"
+                     data-aos="fade-up"
+                     data-aos-delay="450">
+                    <p>
+                        Pagasa Multi-Purpose Cooperative (PMPC) is a member-owned organization
+                        committed to empowering communities through sustainable financial and
+                        livelihood services. Guided by the spirit of cooperation, PMPC provides
+                        accessible loans, savings, and business opportunities to help members
+                        achieve financial stability and growth. Together, we build a brighter
+                        future—rooted in trust, unity, and shared progress.
+                    </p>
                 </div>
-                <div class="about-button">
-                    <a href="{{route('about')}}" class="learn-more-btn">LEARN MORE</a>
+                <div class="about-button" data-aos="zoom-in" data-aos-delay="500">
+                    <a href="{{ route('about') }}" class="learn-more-btn">
+                        LEARN MORE
+                        <i class="fas fa-arrow-right icon"></i>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="mvc-container">
-            <div class="mvc-content">
+        <div class="mvc-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="mvc-content" data-aos="fade-down" data-aos-delay="200">
                 <h2 class="mvc-title">Our Mission, Vision, and Cooperative Values</h2>
                 <p class="mvc-description">Building trust and identity for our members.</p>
             </div>
             <div class="mvc-card-container">
-                <div class="mvc-card" data-aos="zoom-in">
+                <div class="mvc-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="mvc-icon">
                         <img src="{{asset('images/icons/mission-icon.png')}}" alt="Mission Icon">
                     </div>
@@ -40,7 +62,7 @@
                     </p>
                 </div>
 
-                <div class="mvc-card" data-aos="zoom-in">
+                <div class="mvc-card" data-aos="zoom-in" data-aos-delay="400">
                     <div class="mvc-icon">
                         <img src="{{asset('images/icons/vision-icon.png')}}" alt="Vision Icon">
                     </div>
@@ -52,7 +74,7 @@
                     </p>
                 </div>
 
-                <div class="mvc-card" data-aos="zoom-in">
+                <div class="mvc-card" data-aos="zoom-in" data-aos-delay="500">
                     <div class="mvc-icon">
                         <img src="{{asset('images/icons/values-icon.png')}}" alt="Cooperative Values Icon">
                     </div>
