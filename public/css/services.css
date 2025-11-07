@@ -2,7 +2,7 @@
   height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #f8fafc, #fff);
+  background: #e8f5e9;
 }
 
 /* Circle navigation container */
@@ -30,6 +30,14 @@
   font-size: 2rem;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+
+.circle-icon {
+    width: 48%;
+    height: 48%;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* makes colored PNGs white */
+    transition: transform .35s ease, filter .35s ease;
 }
 
 /* Text (hidden by default, appears on hover) */
@@ -155,7 +163,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f8f9fa;
+  background: #e8f5e9;
 }
 
 .loans .loans-content {
@@ -329,7 +337,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f8f9fa;
+    background-color: #e8f5e9;
     padding: 80px 70px;
 }
 

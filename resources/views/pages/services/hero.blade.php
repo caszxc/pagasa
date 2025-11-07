@@ -8,21 +8,23 @@
     </div>
 
     <div class="circle-container">
-        <a href="#savings" class="circle">
-            <i class="fa-solid fa-piggy-bank"></i>
-            <span>Savings</span>
-        </a>
-        <a href="#loans" class="circle">
-            <i class="fa-solid fa-hand-holding-dollar"></i>
-            <span>Loans</span>
-        </a>
-        <a href="#benefits" class="circle">
-            <i class="fa-solid fa-gift"></i>
-            <span>Benefits</span>
-        </a>
-        <a href="#others" class="circle">
-            <i class="fa-solid fa-ellipsis-h"></i>
-            <span>Others</span>
-        </a>
+        @php
+            $items = [
+                ['href' => '#savings',  'icon' => 'images/icons/savings-offer-icon.png', 'text' => 'Savings'],
+                ['href' => '#loans',    'icon' => 'images/icons/loans-offer-icon.png',    'text' => 'Loans'],
+                ['href' => '#benefits', 'icon' => 'images/icons/benefits-offer-icon.png','text' => 'Benefits'],
+                ['href' => '#others',   'icon' => 'images/icons/other-offer-icon.png',   'text' => 'Others'],
+            ];
+        @endphp
+
+        @foreach ($items as $i => $item)
+            <a href="{{ $item['href'] }}"
+               class="circle"
+               data-aos="zoom-in"
+               data-aos-delay="{{ 300 + $i * 150 }}">
+                <img src="{{ asset($item['icon']) }}" alt="{{ $item['text'] }} Icon" class="circle-icon">
+                <span>{{ $item['text'] }}</span>
+            </a>
+        @endforeach
     </div>
 </section>
