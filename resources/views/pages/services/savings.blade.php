@@ -9,7 +9,7 @@
 
         <div class="savings-card-container">
             <div class="group-row">
-                <div class="savings-card">
+                <div class="savings-card share">
                     <div class="card-inner">
                         <div class="card-front">
                             <h3 class="savings-name">SHARE CAPITAL</h3>
@@ -20,7 +20,7 @@
                     </div>
                 </div>
 
-                <div class="savings-card">
+                <div class="savings-card deposit">
                     <div class="card-inner">
                         <div class="card-front">
                             <h3 class="savings-name">SAVINGS DEPOSIT</h3>
@@ -33,7 +33,7 @@
             </div>
 
             <div class="group-row">
-                <div class="savings-card">
+                <div class="savings-card kiddie">
                     <div class="card-inner">
                         <div class="card-front">
                             <h3 class="savings-name">KIDDIE SAVERS</h3>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
 
-                <div class="savings-card">
+                <div class="savings-card time">
                     <div class="card-inner">
                         <div class="card-front">
                             <h3 class="savings-name">TIME DEPOSIT</h3>
