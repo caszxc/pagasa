@@ -3,8 +3,7 @@
     height: calc(100vh - 70px);
     background: 
     linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)),
-    url('/images/home/hero-bg.jpg') center/cover no-repeat;
-    background-attachment: fixed; /* Parallax effect */
+    url('../images/home/hero-bg.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,7 +122,7 @@
 }
 
 /* Separator */
-.hero .container .button-container p {
+.hero .container .button-container .separator {
     font-size: 24px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.7);
@@ -132,13 +131,22 @@
     animation-delay: 1.2s;
 }
 
+@media (max-width: 480px) {
+    .hero .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero .button-container .separator {
+        display: none;
+    }
+}
 
 
 /* About Section */
 .about{
     display: flex;
     flex-direction: column;
-    background: url('/images/home/about-bg.jpg') center/cover no-repeat;
+    background: url('../images/home/about-bg.jpg') center/cover no-repeat;
 }
 
 .about .container{
@@ -148,7 +156,8 @@
 }
 
 .about .container .about-container{
-    height: 100vh;
+    height: auto;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -286,7 +295,8 @@
 }
 
 .about .container .mvc-container{
-    height: 100vh;
+    height: auto;
+    padding: 80px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -362,14 +372,41 @@
     height: auto;
 }
 
+@media (max-width: 1024px) {
+    .about .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-content {
+        order: 1; 
+        padding: 0 20px;
+    }
+    .about .about-image   { 
+        display: none;
+    }
+    .about .about-image .image-grid img{
+        height: 200px;
+        width: auto;
+    }
+    .about .container .mvc-container{
+        text-align: center;
+    }
+    .about .container .mvc-container .mvc-card-container {
+        padding: 0 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
 /* Membership Benefits Section */
 .member-benefits{
-    padding: 0 80px;
+    padding: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: url('/images/home/member-benefits-bg.jpg') center/cover no-repeat;
+    height: auto;
+    background: url('../images/home/member-benefits-bg.jpg') center/cover no-repeat;
     color: white;
 }
 
@@ -457,18 +494,30 @@
     color: rgba(255, 255, 255, 0.85);
 }
 
+@media (max-width: 1024px) {
+    .member-benefits .benefits-container {
+        padding: 0 40px;
+        flex-wrap: wrap;
+    }
+    .member-benefits .benefits-container .benefits-header{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
 
 /* Offers Section */
 .offers{
     position: relative;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    background: url('/images/home/offers-bg.jpg') center/cover no-repeat;
+    background: url('../images/home/offers-bg.jpg') center/cover no-repeat;
 }
 
 .offers .offers-container{
-    height: 100vh;
+    height: auto;
+    padding: 80px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -503,6 +552,7 @@
 
 .offers .offers-container .offers-card-container .offer-card{
     background-color: white;
+    flex: 1;
     padding: 36px 52px;
     display: flex;
     flex-direction: column;
@@ -549,13 +599,21 @@
 }
 
 
+@media (max-width: 1024px) {
+    .offers .offers-container .offers-card-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 40px;
+    }
+}
+
 
 /* Call to Action Section */
 .cta{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url('/images/home/cta-bg.jpg') center/cover no-repeat;
+    background: url('../images/home/cta-bg.jpg') center/cover no-repeat;
 }
 
 .cta .cta-container{
@@ -582,6 +640,7 @@
 
 .cta .cta-container .cta-header .cta-description{
     color: #333333;
+    text-align: center;
 }
 
 .cta .cta-container .cta-btn {
@@ -611,7 +670,7 @@
 /* Frequently Asked Question Section*/
 
 .faq {
-    min-height: 100vh; 
+    height: auto; 
     background: #E8F5E9;
     display: flex;
     align-items: center;
@@ -752,6 +811,12 @@
     top: 0;
     height: 1px;
     background: linear-gradient(90deg, transparent, rgba(0,0,0,0.06), transparent);
+}
+
+@media (max-width: 1024px) {
+    .faq { 
+        padding: 80px 20px;
+    }
 }
 
 
