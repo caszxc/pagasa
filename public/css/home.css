@@ -1,3 +1,4 @@
+
 /* Hero Section */
 .hero{
     height: calc(100vh - 70px);
@@ -401,6 +402,7 @@
 
 /* Membership Benefits Section */
 .member-benefits{
+    width: 100%;
     padding: 80px;
     display: flex;
     justify-content: center;
@@ -496,7 +498,6 @@
 
 @media (max-width: 1024px) {
     .member-benefits .benefits-container {
-        padding: 0 40px;
         flex-wrap: wrap;
     }
     .member-benefits .benefits-container .benefits-header{
@@ -666,6 +667,11 @@
     animation: pulse 2s infinite;
 }
 
+@media (max-width: 1024px) {
+    .cta .cta-container .cta-header .cta-title{
+        font-size: 70px;
+    }
+}
 
 /* Frequently Asked Question Section*/
 

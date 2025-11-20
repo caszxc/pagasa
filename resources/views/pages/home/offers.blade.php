@@ -1,7 +1,6 @@
 <section class="offers">
     <div class="offers-container">
-        <div class="offers-header" data-aos="fade-down"
-                 data-aos-delay="200">
+        <div class="offers-header">
             <h2 class="offers-title">What We Offer</h2>
             <p class="offers-description">Pagasa Multi-Purpose Cooperative provides a wide range of financial and community services designed to empower our members — helping them save, grow, and secure a better future.</p>
         </div>

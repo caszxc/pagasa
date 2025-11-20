@@ -7,8 +7,6 @@
             </div>
             <div class="hex-row">
                 <div class="hex"><img src="icons/savings.png" alt="Savings"></div>
-                <div class="hex"><img src="icons/health.png" alt="Health"></div>
-                <div class="hex"><img src="icons/growth.png" alt="Growth"></div>
             </div>
             <div class="hex-row">
                 <div class="hex"><img src="icons/team.png" alt="Team"></div>

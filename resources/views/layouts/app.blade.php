@@ -30,15 +30,6 @@
     @include('layouts.footer')
 
     <script src="{{ asset('js/main.js') }}"></script>
-    <script>
-        // Initialise AOS – you can tweak options here
-        AOS.init({
-            duration: 900,      // animation duration
-            easing: 'ease-out-cubic', // smooth easing
-            once: true,         // animate only once
-            offset: 100         // trigger a little earlier
-        });
-    </script>
 
     <!-- Page-specific scripts -->
     @yield('scripts')
