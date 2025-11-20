@@ -276,6 +276,7 @@ footer{
 /* Banner */
 .banner-container{
     flex: 1;
+    width: 100%;
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -296,7 +297,7 @@ footer{
 }
 
 .banner-description{
-    padding: 0 80px;
+    padding: 0 100px;
     color: #222;
 }
 

@@ -8,7 +8,7 @@
   <div class="radial-container">
     
     <!-- Center Logo -->
-    <div class="coop-logo">COOP</div>
+    <img class="coop-logo" src="{{ asset('images/logo.png')}}">
     
     <!-- Business Nodes -->
     <div id="node1" class="business-node">

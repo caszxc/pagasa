@@ -11,7 +11,7 @@
         <h2 class="benefits-title">Benefits of Being a Member</h2>
         <div class="benefits-wave">
             <div class="benefit" style="--i:1;">
-                <span>Taunang tubo sa Share Capital</span>
+                <span>Annual Dividend on Share Capital</span>
             </div>
             <div class="benefit" style="--i:2;">
                 <span>Patronage Refund</span>
@@ -23,7 +23,7 @@
                 <span>Comprehensive Group Life Insurance</span>
             </div>
             <div class="benefit" style="--i:5;">
-                <span>Tulong sa Tao</span>
+                <span>Member Assistance</span>
             </div>
         </div>
     </div>

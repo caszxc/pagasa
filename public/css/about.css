@@ -64,7 +64,88 @@
     text-align: justify;
 }
 
+/* ====================================
+   Tablet (≤992px)
+   ==================================== */
+@media (max-width: 992px) {
+    .about-container {
+        padding: 50px 30px;
+        gap: 80px;
+    }
 
+    .about-con {
+        gap: 50px;
+    }
+
+    .about-title {
+        font-size: 2.1rem;
+    }
+
+    .about-image {
+        max-width: 450px;
+    }
+}
+
+/* ====================================
+   Mobile (≤768px)
+   ==================================== */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 40px 20px;
+        gap: 70px;
+    }
+
+    .about-con,
+    .about-con--left,
+    .about-con--right {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Make sure image is always on top on mobile */
+    .about-con--right .about-image {
+        order: -1;
+    }
+
+    .about-image {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .about-image img {
+        max-height: 300px;
+        border-radius: 10px;
+    }
+
+    .about-title {
+        font-size: 1.9rem;
+    }
+
+    .about-line {
+        margin: 0 auto;
+    }
+
+    .about-description p {
+        text-align: left;
+        font-size: 1rem;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 1.75rem;
+    }
+
+    .about-image img {
+        max-height: 250px;
+    }
+
+    .about-container {
+        gap: 60px;
+        padding: 30px 15px;
+    }
+}
 
 .history {
   text-align: center;
@@ -170,7 +251,21 @@
   left: -11px; /* Aligns circle to the left edge of right items */
 }
 
-
+/* Small phones */
+@media (max-width: 660px) {
+    .history{
+      padding: 60px 10px;
+    }
+    .timeline-item.left{
+      padding: 20px 20px 20px 0;
+    }
+    .timeline-item.right{
+      padding: 20px 0 20px 20px;
+    }
+    .timeline-content h3{
+      font-size: 1rem;
+    }
+}
 
 .awards {
   text-align: center;
@@ -301,7 +396,7 @@
   transform: translate(-50%, -50%);
   width: 140px;
   height: 140px;
-  background: #fff;
+  background: url('../images/logo.png');
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -310,8 +405,7 @@
   font-size: 1.8rem;
   color: #2E7D32;
   box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-  z-index: 2;
-  border: 6px solid #2E7D32;
+  z-index: 5;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
