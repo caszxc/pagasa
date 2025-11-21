@@ -36,7 +36,7 @@
                     </p>
                 </div>
             </div>
-            <div class="about-image">
+            <div class="about-image right">
                 <img src="{{ asset('images/home/hero-bg.jpg')}}" alt="Pagasa Multi-Purpose Cooperative">
             </div>
         </div>

@@ -16,54 +16,54 @@
             <div class="services-items">
                 <!-- Services -->
                 <div class="service-item" data-category="services">
-                    <img src="images/fabric-conditioner.png" alt="Seminars and Trainings">
+                    <img src="{{ asset('images/services/seminar.jpg')}}" alt="Seminars and Trainings">
                 </div>
                 <div class="service-item" data-category="services">
-                    <img src="images/honey.png" alt="Livelohood Programs">
+                    <img src="{{ asset('images/services/livelihood.jpg')}}" alt="Livelohood Programs">
                 </div>
                 <div class="service-item" data-category="services">
-                    <img src="images/rice.png" alt="Community Services">
+                    <img src="{{ asset('images/services/community-service.jpg')}}" alt="Community Services">
                 </div>
                 <div class="service-item" data-category="services">
-                    <img src="images/rice.png" alt="Financial Literacy / Counselling / Planning">
+                    <img src="{{ asset('images/services/financial-literacy.jpg')}}" alt="Financial Literacy / Counselling / Planning">
                 </div>
                 <div class="service-item" data-category="services">
-                    <img src="images/rice.png" alt="Educational Assistance">
+                    <img src="{{ asset('images/services/educational-assistance.jpg')}}" alt="Educational Assistance">
                 </div>
                 <div class="service-item" data-category="services">
-                    <img src="images/rice.png" alt="Member's products">
+                    <img src="{{ asset('images/services/members-product.jpg')}}" alt="Member's products">
                 </div>
 
                 <!-- Products -->
                 <div class="service-item" data-category="products">
-                    <img src="images/water.png" alt="Puregold Purchase Order">
+                    <img src="{{ asset('images/services/puregold.jpg')}}" alt="Puregold Purchase Order">
                 </div>
                 <div class="service-item" data-category="products">
-                    <img src="images/peanut-butter.png" alt="SM Gift Card">
+                    <img src="{{ asset('images/services/sm-gift.jpg')}}" alt="SM Gift Card">
                 </div>
                 <div class="service-item" data-category="products">
-                    <img src="images/coffee.png" alt="PMPC Purchase Card">
+                    <img src="{{ asset('images/services/purchase-card.jpg')}}" alt="PMPC Purchase Card">
                 </div>
                 <div class="service-item" data-category="products">
-                    <img src="images/coffee.png" alt="Rice">
+                    <img src="{{ asset('images/services/rice.png')}}" alt="Rice">
                 </div>
                 <div class="service-item" data-category="products">
-                    <img src="images/coffee.png" alt="12 in 1 Turmeric">
+                    <img src="{{ asset('images/services/turmeric.jpg')}}" alt="12 in 1 Turmeric">
                 </div>
                 <div class="service-item" data-category="products">
-                    <img src="images/coffee.png" alt="Pure Honey">
+                    <img src="{{ asset('images/services/pure-honey.png')}}" alt="Pure Honey">
                 </div>
                 <div class="service-item" data-category="products">
-                    <img src="images/coffee.png" alt="Peanut Butter">
+                    <img src="{{ asset('images/services/peanut-butter.png')}}" alt="Peanut Butter">
                 </div>
                 <div class="service-item" data-category="products">
-                    <img src="images/coffee.png" alt="Dishwashing Liquid">
+                    <img src="{{ asset('images/services/dishwashing-liquid.png')}}" alt="Dishwashing Liquid">
                 </div>
                 <div class="service-item" data-category="products">
-                    <img src="images/coffee.png" alt="Fabric Conditioner">
+                    <img src="{{ asset('images/services/fabric-conditioner.png')}}" alt="Fabric Conditioner">
                 </div>
                 <div class="service-item" data-category="products">
-                    <img src="images/coffee.png" alt="Liquid Detergent">
+                    <img src="{{ asset('images/services/liquid-detergent.png')}}" alt="Liquid Detergent">
                 </div>
             </div>
         </div>

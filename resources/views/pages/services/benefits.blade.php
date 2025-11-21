@@ -2,15 +2,15 @@
     <div class="benefits-content">
         <div class="benefits-hex-grid">
             <div class="hex-row">
-                <div class="hex"><img src="icons/referral.png" alt="Referral"></div>
-                <div class="hex"><img src="icons/loan.png" alt="Loan"></div>
+                <div class="hex"><img src="{{asset('images/icons/share-capital-icon.png')}}"></div>
+                <div class="hex"><img src="{{asset('images/icons/patronage-refund-icon.png')}}"></div>
             </div>
             <div class="hex-row">
-                <div class="hex"><img src="icons/savings.png" alt="Savings"></div>
+                <div class="hex"><img src="{{asset('images/icons/savings-icon.png')}}"></div>
             </div>
             <div class="hex-row">
-                <div class="hex"><img src="icons/team.png" alt="Team"></div>
-                <div class="hex"><img src="icons/reward.png" alt="Reward"></div>
+                <div class="hex"><img src="{{asset('images/icons/insurance-icon.png')}}"></div>
+                <div class="hex"><img src="{{asset('images/icons/helping-hands-icon.png')}}"></div>
             </div>
         </div>
 

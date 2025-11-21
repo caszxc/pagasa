@@ -7,61 +7,31 @@
     <div class="award-container">
         <div class="award-item">
             <div class="award-image">
-                <img src="award.png" alt="Award">
+                <img src="images/awards/award-2025.png" alt="Award">
             </div>
             <div class="award-info">
                 <h4>2025</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <p>Most Outstanding Cooperative (Medium Category)</p>
             </div>
         </div>
 
         <div class="award-item">
             <div class="award-image">
-                <img src="award.png" alt="Award">
+                <img src="images/awards/award-2024.png" alt="Award">
             </div>
             <div class="award-info">
-                <h4>2025</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <h4>2024</h4>
+                <p>Most Outstanding Cooperative (Medium Category)</p>
             </div>
         </div>
 
         <div class="award-item">
             <div class="award-image">
-                <img src="award.png" alt="Award">
+                <img src="images/awards/award-2023.png" alt="Award">
             </div>
             <div class="award-info">
-                <h4>2025</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-            </div>
-        </div>
-
-        <div class="award-item">
-            <div class="award-image">
-                <img src="award.png" alt="Award">
-            </div>
-            <div class="award-info">
-                <h4>2025</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-            </div>
-        </div>
-
-        <div class="award-item">
-            <div class="award-image">
-                <img src="award.png" alt="Award">
-            </div>
-            <div class="award-info">
-                <h4>2025</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-            </div>
-        </div>
-
-        <div class="award-item">
-            <div class="award-image">
-                <img src="award.png" alt="Award">
-            </div>
-            <div class="award-info">
-                <h4>2025</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <h4>2023</h4>
+                <p>Most Outstanding Cooperative (Medium Category)</p>
             </div>
         </div>
     </div>
