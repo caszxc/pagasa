@@ -1,3 +1,7 @@
+body{
+    background: url('../images/home/about-bg.jpg') no-repeat center/cover;
+}
+
 .hero {
     display: flex;
     gap: 20px;
@@ -6,7 +10,6 @@
     text-align: center;
     height: auto;
     padding: 0 0 20px;
-    background: #e8f5e9;
     position: relative;
     overflow: hidden;
 }
@@ -160,7 +163,7 @@
     align-items: flex-start;
     gap: 1rem;
     padding: 1.5rem;
-    background-color: #f0f0f0;
+    background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -257,7 +260,6 @@
 
 
 .membership-steps {
-  background: linear-gradient(180deg, #f8fafc, #ffffff);
   padding: 80px 20px;
   text-align: center;
   position: relative;
@@ -486,7 +488,6 @@
 
 .downloadable {
   padding: 80px 0;
-  background-color: #f8f9fa;
 }
 
 .downloadable-con {

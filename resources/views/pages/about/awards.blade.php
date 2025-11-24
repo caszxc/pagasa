@@ -1,6 +1,5 @@
 <section class="awards">
     <div class="awards-header">
-        <h3 class="award-subtitle">OUR AWARD</h3>
         <h2 class="award-title">Our <span>Award–winning</span> Journey</h2>
     </div>
 

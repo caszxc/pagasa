@@ -1,8 +1,11 @@
+body{
+    background: url('../images/home/about-bg.jpg') no-repeat center/cover;
+}
+
 .hero {
   height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
-  background: #e8f5e9;
   gap: 20px;
 }
 
@@ -200,7 +203,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #e8f5e9;
 }
 
 .loans .loans-content {
@@ -302,7 +304,6 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #fff;
   padding: 0 20px;
 }
 
@@ -402,7 +403,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e8f5e9;
     padding: 80px 70px;
 }
 
@@ -483,15 +483,80 @@
 }
 
 .other-services .other-services-content .services-body .service-item {
-    background: #e0e0e0;
     width: calc(33.333% - 20px);
     height: 230px; 
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border-radius: 8px;
+    color: white;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.other-services .service-item.seminar{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/seminar.jpg') center / cover no-repeat;
+}
+
+.other-services .service-item.livelihood{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/livelihood.jpg') center / cover no-repeat;
+}
+
+.other-services .service-item.community{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/community-service.jpg') center / cover no-repeat;
+}
+
+.other-services .service-item.financial{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/financial-literacy.jpg') center / cover no-repeat;
+}
+
+.other-services .service-item.educational{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/educational-assistance.jpg') center / cover no-repeat;
+}
+
+.other-services .service-item.products{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/members-product.jpg') center / cover no-repeat;
+}
+
+.other-services .service-item.puregold{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/puregold.jpg') center / cover no-repeat;
+}
+
+.other-services .service-item.sm{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/sm-gift.jpg') center / cover no-repeat;
+}
+
+.other-services .service-item.pmpc{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/purchase-card.jpg') center / cover no-repeat;
+}
+
+.other-services .service-item.rice{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/rice.png') center / cover no-repeat;
+}
+
+.other-services .service-item.turmeric{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/turmeric.png') center / cover no-repeat;
+}
+
+.other-services .service-item.honey{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/pure-honey.png') center / cover no-repeat;
+}
+
+.other-services .service-item.peanut{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/peanut-butter.png') center / cover no-repeat;
+}
+
+.other-services .service-item.dishwashing{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/dishwashing-liquid.png') center / cover no-repeat;
+}
+
+.other-services .service-item.conditioner{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/fabric-conditioner.png') center / cover no-repeat;
+}
+
+.other-services .service-item.detergent{
+    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/liquid-detergent.png') center / cover no-repeat;
 }
 
 .other-services .other-services-content .services-body .service-item:hover {

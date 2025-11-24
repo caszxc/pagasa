@@ -1,3 +1,7 @@
+body{
+    background: url('../images/home/about-bg.jpg') no-repeat center/cover;
+}
+
 .hero{
   min-height: calc(100vh - 70px);
 }
@@ -45,9 +49,10 @@
 }
 
 .about-container .about-content .about-header .about-title{
-    font-size: 2.2rem;
-    font-weight: 800;
-    color: #111;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  position: relative;
 }
 
 .about-container .about-content .about-header .about-line{
@@ -150,7 +155,6 @@
 
 .history {
   text-align: center;
-  background: #edf7ed;
   display: flex;
   flex-direction: column;
   padding: 60px;
@@ -160,17 +164,19 @@
 .history-header{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .timeline-title {
-  font-size: 24px;
+  font-size: 2.5rem;
   font-weight: 700;
+  color: #2c3e50;
+  position: relative;
 }
 
 .timeline-desc {
   font-size: 14px;
-  color: #444;
+  color: #222;
 }
 
 .timeline {
@@ -281,9 +287,11 @@
 }
 
 .award-title {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 50px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  position: relative;
+  margin-bottom: 55px;
 }
 
 .award-title span {
@@ -322,7 +330,7 @@
 }
 
 .award-image img {
-  width: 85%;
+  width: 95%;
   height: auto;
 }
 
@@ -352,7 +360,7 @@
 
 .award-info p {
   font-size: 14px;
-  color: #333;
+  color: #222;
   margin-top: 8px;
   line-height: 1.4em;
 }
@@ -366,13 +374,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #edf7ed;
 }
 
 .business-header{
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   width: 40%;
 }
 
@@ -381,6 +388,10 @@
   font-weight: 700;
   color: #2c3e50;
   position: relative;
+}
+
+.business-description{
+  color: #222;
 }
 
 /* Radial Layout Container */
@@ -480,55 +491,6 @@
   background-image: url('../images/businesses/apartment.png');
 }
 
-.business-node:hover {
-  transform: translateY(-8px) scale(1.08);
-  box-shadow:0 15px 35px rgba(46,125,50,.25);
-  z-index: 2;
-}
-
-.business-node::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border: 3px dashed #2E7D32;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(1.3);
-  animation: pulse 2s infinite;
-}
-
-.business-node:hover::before {
-  opacity: 0.3;
-}
-
-@keyframes pulse {
-  0% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.4; }
-  100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
-}
-
-/* Icons (using simple SVG or emoji for demo) */
-.business-node .icon {
-  font-size: 2rem;
-  margin-bottom: 6px;
-}
-
-/* Connecting Lines */
-.connection-line {
-  position: absolute;
-  background: linear-gradient(45deg, transparent, #e74c3c, transparent);
-  height: 3px;
-  transform-origin: left center;
-  z-index: 1;
-}
-
-/* Position each node around the center */
-#node1 { top: 10px; left: 50%; transform: translateX(-50%); } /* Top */
-#node2 { top: 50%; right: 10px; transform: translateY(-50%); } /* Right */
-#node3 { bottom: 10px; left: 50%; transform: translateX(-50%); } /* Bottom */
-#node4 { top: 50%; left: 10px; transform: translateY(-50%); } /* Left */
 
 @media (max-width: 1024px) {
   .business-header {
@@ -577,7 +539,6 @@
   .business-header {
     width: 100%;
     padding: 0 20px;
-    gap: 20px;
   }
 
   /* Hide radial layout */

@@ -1,3 +1,7 @@
+body{
+    background: url('../images/home/about-bg.jpg') no-repeat center/cover;
+}
+
 .hero{
   min-height: calc(100vh - 70px);
 }
@@ -120,7 +124,6 @@ button:hover{
 
 .locations {
   height: 100vh;
-  background-color: #E8F5E9;
   display: flex;
   justify-content: center;
   align-items: center;

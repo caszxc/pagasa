@@ -1,7 +1,7 @@
 <section class="history">
     <div class="history-header">
         <h2 class="timeline-title">Company History</h2>
-        <p class="timeline-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="timeline-desc">What started as a small cooperative fueled by shared goals and teamwork has transformed into a thriving organization. Pagasa Multi-Purpose Cooperative continues to innovate, expand its services, and create meaningful opportunities for its members and the community.</p>
     </div>
 
     <div class="timeline">

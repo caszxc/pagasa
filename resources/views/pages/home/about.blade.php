@@ -2,6 +2,19 @@
     <div class="container">
         <div class="about-container">
             <div class="about-image">
+                <div class="image-slider">
+                    <div class="slides">
+                        <img src="{{ asset('images/home/picture1.png') }}" alt="Cooperative Community">
+                        <img src="{{ asset('images/home/picture2.png') }}" alt="Member Success">
+                        <img src="{{ asset('images/home/picture3.png') }}" alt="Team & Growth">
+                    </div>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                
                 <div class="image-grid">
                     <img src="{{ asset('images/home/picture3.png') }}" alt="About Image 1">
                     <img src="{{ asset('images/home/picture2.png') }}" alt="About Image 2">
