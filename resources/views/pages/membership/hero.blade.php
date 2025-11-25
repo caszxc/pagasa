@@ -7,24 +7,17 @@
         </p>
     </div>
 
-    <div class="benefits-container">
-        <h2 class="benefits-title">Benefits of Being a Member</h2>
-        <div class="benefits-wave">
-            <div class="benefit" style="--i:1;">
-                <span>Annual Dividend on Share Capital</span>
-            </div>
-            <div class="benefit" style="--i:2;">
-                <span>Patronage Refund</span>
-            </div>
-            <div class="benefit" style="--i:3;">
-                <span>Savings and Time Deposit</span>
-            </div>
-            <div class="benefit" style="--i:4;">
-                <span>Comprehensive Group Life Insurance</span>
-            </div>
-            <div class="benefit" style="--i:5;">
-                <span>Member Assistance</span>
-            </div>
-        </div>
+    <div class="hero-stats">
+        <div class="stat"><strong>5,000+</strong> Active Members</div>
+        <div class="stat"><strong>₱500M+</strong> Total Assets</div>
+        <div class="stat"><strong>25+</strong> Years of Service</div>
+        <div class="stat"><strong>12%</strong> Avg. Annual Dividend</div>
+    </div>
+
+    <div class="hero-cta">
+        <a href="#membership" class="btn-primary">Start Your Membership Now →</a>
+        <a href="{{ asset('downloads/APPLICATION FOR MEMBERSHIP FORM.9.10.16.doc') }}" class="btn-secondary" download>
+            <i class="fa fa-download"></i> Download Application Form
+        </a>
     </div>
 </section>

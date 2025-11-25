@@ -13,7 +13,7 @@
                 <div class="location-card" onclick="showDetails(1)">
                     <div>
                         <h3>Malabon Office</h3>
-                        <p>Branch Office</p>
+                        <p>Satellite Office</p>
                     </div>
                     
                     <p>MXP5+VH7, Rodriguez St, Malabon, 1478 Metro Manila</p>
@@ -22,7 +22,7 @@
                 <div class="location-card" onclick="showDetails(2)">
                     <div>
                         <h3>Quezon Office</h3>
-                        <p>Branch Office</p>
+                        <p>Satellite Office</p>
                     </div>
                     <p>M246+7J5, Kaingin Rd, Quezon City, 1106 Metro Manila</p>
                     <p>Phone: (555) 456-7890</p>

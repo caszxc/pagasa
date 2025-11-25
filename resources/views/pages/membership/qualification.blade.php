@@ -1,10 +1,7 @@
 <section class="qualification">
     <div class="qualification-header">
-        <img src="{{ asset('images/icons/requirement-icon.png') }}" alt="Requirements Icon" class="header-icon">
-        <div class="header-content">
-            <h2 class="title">Membership Requirements</h2>
-            <p class="description">Basic qualifications for becoming a member of Pagasa Multi-Purpose Cooperative.</p>
-        </div>
+        <h2 class="title">Membership Requirements</h2>
+        <p class="description">Basic qualifications for becoming a member of Pagasa Multi-Purpose Cooperative.</p>
     </div>
 
     <div class="req-container">

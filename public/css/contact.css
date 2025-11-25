@@ -3,7 +3,7 @@ body{
 }
 
 .hero{
-  min-height: calc(100vh - 70px);
+  min-height: auto;
 }
 
 .form-container{
@@ -123,7 +123,7 @@ button:hover{
 
 
 .locations {
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,9 +151,22 @@ button:hover{
   cursor: pointer;
   transition: background 0.3s;
 }
-.location-card:hover {
-  background: #e0e0e0;
+
+.location-card.active {
+    border-left: 5px solid #1a5d1a;   /* Green left border matching your theme */
+    padding-left: 12px;                /* Adjust padding so content doesn't jump */
 }
+
+.location-card > div > h3{
+  color: #1a5d1a;
+  font-size: 1.3rem;
+}
+
+.location-card > div > p{
+  color: #222;
+  font-size: 0.9rem;
+}
+
 .side-panel {
   flex: 2;
   background: #fff;
@@ -164,6 +177,7 @@ button:hover{
 }
 .side-panel h2 {
   margin-top: 0;
+  color: #1a5d1a;
 }
 .side-panel p {
   color: #333;

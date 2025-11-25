@@ -4,7 +4,7 @@
 
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/home.css')}}">
-    <link rel="stylesheet" href="{{ asset('css/responsive.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/home_responsive.css')}}">
 @endsection
 
 @section('content')

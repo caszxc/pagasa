@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'PAGASA | Membership')
+@section('title', 'Membership | PAGASA MPC')
 
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/membership.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/membership_responsive.css')}}">
 @endsection
 
 @section('content')

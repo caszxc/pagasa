@@ -2,6 +2,10 @@ body{
     background: url('../images/home/about-bg.jpg') no-repeat center/cover;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 .hero {
   height: calc(100vh - 70px);
   display: flex;
@@ -21,8 +25,8 @@ body{
 /* Each circle */
 .circle {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   background-color: #2E7D32;
   border-radius: 50%;
   display: flex;
@@ -67,23 +71,6 @@ body{
   transform: translateY(0);
 }
 
-@media (max-width: 700px) {
-    .hero{
-        height: auto;
-    }
-    .circle-container{
-        padding: 0 10px 50px;
-    }
-
-    .circle{
-        width: 70px;
-        height: 70px;
-    }
-    .circle span {
-        opacity: 1;
-        transform: unset;
-    }
-}
 
 /* Savings Section */
 .savings{
@@ -110,13 +97,14 @@ body{
 }
 
 .savings .savings-content .savings-header .savings-title{
-    font-size: 2.2rem;
-    font-weight: 800;
-    color: #111;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    text-align: center;
 }
 
 .savings .savings-content .savings-header .savings-description{
-    font-size: 1rem;
+    color: #222;
     text-align: center;
 }
 
@@ -164,29 +152,30 @@ body{
     border-radius: 10px;
     backface-visibility: hidden;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .savings-card.share .card-inner .card-front{
-    background: url('/images/services/card-share-front.jpg') no-repeat center center/cover;
+    background: url('../images/services/card-share-front.jpg') no-repeat center center/cover;
 }
 
 .savings-card.deposit .card-inner .card-front{
-    background: url('/images/services/card-deposit-front.jpg') no-repeat center center/cover;
+    background: url('../images/services/card-deposit-front.jpg') no-repeat center center/cover;
 }
 
 .savings-card.kiddie .card-inner .card-front{
-    background: url('/images/services/card-kiddie-front.jpg') no-repeat center center/cover;
+    background: url('../images/services/card-kiddie-front.jpg') no-repeat center center/cover;
 }
 
 .savings-card.time .card-inner .card-front{
-    background: url('/images/services/card-time-front.jpg') no-repeat center center/cover;
+    background: url('../images/services/card-time-front.jpg') no-repeat center center/cover;
 }
 
 .savings .savings-content .savings-card-container .group-row .savings-card .card-inner .card-back {
-  background: url('../images/services/card-back.png') no-repeat center center/cover;
+  background: #3A7F4F;
   color: #fff;
   transform: rotateY(180deg);
   text-align: center;
@@ -195,6 +184,7 @@ body{
 .savings .savings-content .savings-card-container .group-row .savings-card .savings-name{
     font-size: 1.5rem;
 }
+
 
 /* Loans Section */
 .loans {
@@ -206,7 +196,7 @@ body{
 }
 
 .loans .loans-content {
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     display: flex;
     flex-direction: column;
@@ -223,79 +213,124 @@ body{
 }
 
 .loans .loans-content .loans-header  .loans-title {
-    font-size: 2rem;
-    font-weight: 800;
-    color: #111;
-}
-
-.loans .loans-content .loans-header .loans-description {
-    font-size: 1rem;
-    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
     text-align: center;
 }
 
-.loans .loans-content .loans-carousel {
+.loans .loans-content .loans-header .loans-description {
+    color: #222;
+    text-align: center;
+}
+
+.loans-carousel-container {
     position: relative;
     width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.loans-carousel {
     overflow: hidden;
+    border-radius: 16px;
+    width: 100%;
 }
 
-.loans .loans-content .loans-carousel .loans-wrapper {
+.loans-wrapper {
     display: flex;
-    gap: 20px;
-    padding: 10px;
-    transition: transform 0.5s ease;
+    gap: 24px;
+    padding: 20px 10px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
 }
 
-.loans .loans-content .loans-carousel .loans-wrapper .loans-item {
+.loans-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Loan Card Styling */
+.loans-item {
+    min-height: 250px;
     min-width: 300px;
-    height: 300px;
-    color: #E8F5E9;
-    background: url('/images/services/loan.png') no-repeat center/cover;
+    flex: 0 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loan-card {
+    background: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    align-items: flex-start;
+    border-radius: 16px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.loans .loans-content .loans-carousel .loans-wrapper .loans-item:hover {
-    transform: scale(1.08);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+.loan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(26, 93, 26, 0.15);
+    border-color: #1a5d1a;
 }
 
-.loans .loans-content .loans-carousel .carousel-btn {
+.loans-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a5d1a;
+    margin: 0 0 12px 0;
+}
+
+.loan-max {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 8px 0;
+    font-weight: 600;
+}
+
+.loan-interest {
+    display: inline-block;
+    background: #e6f7e6;
+    color: #1a5d1a;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+/* Navigation Buttons */
+.carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 2rem;
+    background: white;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    cursor: pointer;
+    z-index: 10;
     display: flex;
-    justify-content: center;
     align-items: center;
-    transition: background 0.3s;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
-.loans .loans-content .loans-carousel .carousel-btn:hover {
-    background: #eee;
+.carousel-btn:hover {
+    background: #1a5d1a;
+    color: white;
+    transform: translateY(-50%) scale(1.1);
 }
 
-.loans .loans-content .loans-carousel .carousel-btn.prev {
-    left: -50px;
-}
-
-.loans .loans-content .loans-carousel .carousel-btn.next {
-    right: -50px;
-}
+.prev-btn { left: -60px; }
+.next-btn { right: -60px; }
 
 
 /* Benefits Section */
@@ -335,14 +370,15 @@ body{
 }
 .hex-row:nth-child(2) {
     justify-content: flex-start;
+    align-items: center;
+    gap: 0 !important;
     padding-left: 0;
 }
 
-.benefits .benefits-content .benefits-hex-grid .hex-row .hex {
+.hex-wrapper {
     width: 150px;
     aspect-ratio: 1 / 1;
-    border: 1px solid #fff;
-    background: #e5e5e5;
+    background: #fff; /* border color */
     clip-path: polygon(
         50% 0%,
         93% 25%,
@@ -351,14 +387,22 @@ body{
         7% 75%,
         7% 25%
     );
+    padding: 4px; /* border thickness */
+}
+
+.hex {
+    width: 100%;
+    height: 100%;
+    background: #3A7F4F;
+    clip-path: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease, background 0.3s ease;
+    transition: .3s ease;
 }
 
 .benefits .benefits-content .benefits-hex-grid .hex-row .hex:hover {
-    background: #d1d1d1;
+    background: #316C43;
 }
 
 .benefits .benefits-content .benefits-hex-grid .hex-row .hex img {
@@ -367,33 +411,45 @@ body{
     object-fit: contain;
 }
 
+.hex.active,
+.hex:active {
+    background: #2E6B3F !important;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(46, 107, 63, 0.6);
+}
+
+/* Benefits info styling */
+.benefits-info {
+    width: 200px;
+    padding: 0 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.benefits-info.show {
+    opacity: 1;
+}
+
+.benefits-info .benefit-title {
+    color: #2E6B3F;
+}
+
 .benefits .benefits-content .benefits-text {
-  max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 
 .benefits .benefits-content .benefits-text .benefits-title {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #111;
-  margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
 }
 
 .benefits .benefits-content .benefits-text .benefits-description {
-  font-size: 1rem;
-  color: #333;
-}
-
-@media (max-width: 480px) {
-    .benefits .benefits-content .benefits-hex-grid .hex-row .hex {
-        width: 85px;
-    }
-    .hex img {
-        width: 40px;
-        height: 40px;
-    }
-    .hex-row:nth-child(1), .hex-row:nth-child(3) {
-        padding-left: 55px;
-    }
+  color: #222;
 }
 
 
@@ -423,14 +479,13 @@ body{
 }
 
 .other-services .other-services-content .section-header .section-title {
-    font-size: 2rem;
-    font-weight: 800;
-    color: #111;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
 }
 
 .other-services .other-services-content .section-header .section-description {
-    font-size: 1rem;
-    color: #444;
+    color: #222;
 }
 
 .other-services .other-services-content .services-body {
@@ -568,39 +623,4 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-@media (max-width: 600px) {
-    .other-services{
-        padding: 80px 10px;
-    }
-
-    .other-services .other-services-content .services-body {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .other-services .other-services-content .services-body .services-labels {
-        flex-direction: row;
-        border-right: none;
-        border-bottom: 2px solid #000;
-        padding-right: 0;
-        padding-bottom: 20px;
-        justify-content: center;
-        gap: 40px;
-        min-width: auto;
-    }
-
-    .other-services .other-services-content .services-body .services-labels .tab.active::after {
-        right: auto;
-        left: 50%;
-        top: auto;
-        bottom: -27px;
-        transform: translateX(-50%);
-    }
-
-    .other-services .other-services-content .services-body .service-item {
-        width: 100%; /* 1 column */
-        height: 180px;
-    }
 }

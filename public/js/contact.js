@@ -52,14 +52,14 @@ const locations = [
 },
 {
     name: "Malabon Office",
-    type: "Branch Office",
+    type: "Satellite Office",
     address: "MXP5+VH7, Rodriguez St, Malabon, 1478 Metro Manila",
     phone: "(555) 987-6543",
     map: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61751.18741768942!2d120.88683452167967!3d14.68717019999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b471f7d998c3%3A0xeeeafda5237d9621!2sPag-Asa%20Multi-Purpose%20Cooperative!5e0!3m2!1sen!2sph!4v1761186254733!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
 },
 {
     name: "Quezon Office",
-    type: "Branch Office",
+    type: "Satellite Office",
     address: "M246+7J5, Kaingin Rd, Quezon City, 1106 Metro Manila",
     phone: "(555) 456-7890",
     map: `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61760.08754831533!2d120.93950942167965!3d14.655630800000022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b6f2d945b8b3%3A0x9bbc50c33db31231!2sPagasa%20Multi%20-%20Purpose%20Cooperative!5e0!3m2!1sen!2sph!4v1761186309422!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
@@ -69,15 +69,28 @@ const locations = [
 function showDetails(index) {
     const location = locations[index];
     const sidePanel = document.getElementById('sidePanel');
+
+    // Update side panel content
     sidePanel.innerHTML = `
         <h2>${location.name}</h2>
         <p>${location.type}</p>
         <p>${location.address}</p>
         <p>${location.phone}</p>
         <div class="map-container">${location.map}</div>
-        <button class="direction-btn" onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}', '_blank')">Get Directions</button>
+        <button class="direction-btn" onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}', '_blank')">
+            Get Directions
+        </button>
     `;
+
+    // Remove active class from all cards
+    document.querySelectorAll('.location-card').forEach(card => {
+        card.classList.remove('active');
+    });
+
+    // Add active class to the clicked card
+    document.querySelectorAll('.location-card')[index].classList.add('active');
 }
 
-// Show first location by default
+// Show first location by default + mark first card as active
 showDetails(0);
+document.querySelector('.location-card').classList.add('active');  // Mark first card active on load

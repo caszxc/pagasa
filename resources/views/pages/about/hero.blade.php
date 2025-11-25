@@ -10,7 +10,7 @@
         <!-- What is Cooperative -->
         <div class="about-con">
             <div class="about-image">
-                <img src="{{ asset('images/home/hero-bg.jpg')}}" alt="What is Cooperative">
+                <img src="{{ asset('images/home/about-pic.jpg')}}" alt="What is Cooperative">
             </div>
             <div class="about-content">
                 <div class="about-header">

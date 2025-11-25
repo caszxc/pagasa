@@ -1,0 +1,450 @@
+/* RESPONSIVE STYLES */
+
+/* Small devices: phones (≤600px) */
+@media (max-width: 600px) {
+    /* Hero Section */
+    .hero {
+        gap: 32px;
+    }
+
+    /* Stats */
+    .hero-stats {
+        gap: 24px;
+        padding: 0;
+        font-size: 1.25rem;
+        align-items: center;
+    }
+
+    .stat{
+        flex: 1 1 140px;
+    }
+
+    .stat strong {
+        font-size: 1.6rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+        padding: 14px 20px;
+    }
+
+    .btn-secondary {
+        padding: 12px 20px;
+    }
+
+
+    /* Qualification Section */
+    .qualification {
+        padding: 60px 20px;
+        gap: 20px;
+        min-height: auto;
+    }
+
+    .qualification-header .title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .req-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .req-card--empty {
+        display: none;
+    }
+
+    .req-card {
+        padding: 1.25rem;
+    }
+
+    .icon-con {
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
+    }
+
+    .req-name {
+        font-size: 1.15rem;
+    }
+
+    .req-description {
+        font-size: 0.92rem;
+    }
+    
+
+    /* Membership Steps Section */
+    .membership-steps {
+        padding: 60px 20px;
+        min-height: auto;
+    }
+
+    .membership-steps .steps-container {
+        gap: 20px;
+    }
+
+    .steps-header .section-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .steps-header .section-subtitle {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .steps-timeline {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .steps-timeline::before {
+        display: none;
+    }
+
+    .steps-timeline::after {
+        content: "";
+        position: absolute;
+        top: 80px;
+        bottom: 40px;
+        left: 65%;
+        width: 4px;
+        background: #cbd5e1;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .step {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .step-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 1.8rem;
+        margin: 0 20px 0 0;
+        flex-shrink: 0;
+    }
+
+    .step-content {
+        padding: 20px;
+        flex: 1;
+    }
+
+    .step-content h3 {
+        font-size: 1.25rem;
+        text-align: left;
+        margin-bottom: 12px;
+    }
+
+    .step-content ul li {
+        font-size: 0.95rem;
+        padding-left: 20px;
+    }
+
+    .step-content ul li::before {
+        font-size: 1.2em;
+    }
+
+
+    /* Downloadable Section */
+    .downloadable-header h2{
+        font-size: 2rem;
+    }
+}
+
+/* Medium devices: tablets (601px–1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Hero Section */
+    .hero {
+        gap: 40px;
+    }
+
+    .banner-description {
+        font-size: 1.1rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .hero-stats {
+        gap: 30px;
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+
+    .stat strong {
+        font-size: 1.7rem;
+    }
+
+    .hero-cta {
+        gap: 1.5rem;
+        padding: 10px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 14px 36px;
+        font-size: 1rem;
+    }
+
+    .btn-secondary {
+        padding: 12px 32px;
+    }
+
+
+    /* Qualification Section */
+    .qualification {
+        min-height: auto;
+        padding: 100px 40px;
+    }
+
+    .qualification-header .title {
+        font-size: 2.6rem;
+    }
+
+    .qualification-header .description {
+        font-size: 1.1rem;
+        max-width: 700px;
+    }
+
+    .req-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .req-card--empty {
+        display: none;
+    }
+
+    .req-card {
+        padding: 1.75rem;
+    }
+
+    .icon-con {
+        width: 48px;
+        height: 48px;
+        font-size: 1.35rem;
+    }
+
+    .req-name {
+        font-size: 1.22rem;
+    }
+
+
+    /* Membership Steps Section */
+    .membership-steps {
+        padding: 80px 40px;
+    }
+
+    .steps-header .section-title {
+        font-size: 2.4rem;
+    }
+
+    .steps-timeline {
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .steps-timeline::before {
+        display: none;
+    }
+
+    .steps-timeline::after {
+        content: "";
+        position: absolute;
+        top: 100px;
+        bottom: 60px;
+        left: 40%;
+        width: 4px;
+        background: #cbd5e1;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .step {
+        display: flex;
+        max-width: unset;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .step-icon {
+        width: 90px;
+        height: 90px;
+        font-size: 2rem;
+        flex-shrink: 0;
+        margin: 0 30px 0 0;
+    }
+
+    .step-content {
+        padding: 28px;
+    }
+
+    .step-content h3 {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+
+    /* Downloadable Section */
+    .downloadable-header h2{
+        font-size: 2.6rem;
+    }
+}
+
+/* Extra large screens */
+@media (min-width: 1400px) {
+    /* Hero Section */
+    .hero {
+        gap: 60px;
+        max-width: 1600px;
+    }
+
+    .hero-stats {
+        gap: 100px;
+        font-size: 1.8rem;
+        padding: 20px 0;
+    }
+
+    .stat strong {
+        font-size: 2.2rem;
+    }
+
+    .hero-cta {
+        gap: 2rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 18px 48px;
+        font-size: 1.15rem;
+    }
+
+    .btn-secondary {
+        padding: 16px 44px;
+    }
+
+
+    /* Qualification Section */
+    .qualification {
+        min-height: auto;
+        padding: 140px 80px;
+        max-width: 1600px;
+    }
+
+    .qualification-header {
+        align-items: center;
+        text-align: center;
+    }
+
+    .qualification-header .title {
+        font-size: 3rem;
+        letter-spacing: -0.5px;
+    }
+
+    .qualification-header .description {
+        font-size: 1.2rem;
+        max-width: 900px;
+    }
+
+    .req-container {
+        gap: 3rem;
+    }
+
+    .req-card {
+        padding: 2rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .req-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .icon-con {
+        width: 56px;
+        height: 56px;
+        font-size: 1.5rem;
+    }
+
+    .req-name {
+        font-size: 1.35rem;
+    }
+
+    .req-description {
+        font-size: 1.02rem;
+        line-height: 1.6;
+    }
+
+    .req-card--empty {
+        visibility: visible;
+    }
+
+
+    /* Membership Steps Section */
+    .membership-steps {
+        padding: 120px 80px;
+    }
+
+    .steps-container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .steps-header .section-title {
+        font-size: 3rem;
+    }
+
+    .steps-header .section-subtitle {
+        font-size: 1.2rem;
+        max-width: 800px;
+    }
+
+    .steps-timeline {
+        gap: 60px;
+    }
+
+    .step {
+        max-width: 400px;
+    }
+
+    .step-icon {
+        width: 110px;
+        height: 110px;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+
+    .step-content {
+        padding: 32px 28px;
+    }
+
+    .step-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .step-content ul li {
+        font-size: 1.05rem;
+    }
+
+
+    /* Downloadable Section */
+    .downloadable-header h2{
+        font-size: 3rem;
+    }
+}

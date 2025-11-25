@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'PAGASA | Contact Us')
+@section('title', 'Contact Us | PAGASA MPC')
 
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/contact.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/contact_responsive.css')}}">
 @endsection
 
 @section('content')

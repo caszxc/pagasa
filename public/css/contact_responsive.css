@@ -1,0 +1,293 @@
+/* RESPONSIVE STYLES */
+
+/* Small devices: phones (≤600px) */
+@media (max-width: 600px) {
+    /* Hero Section */
+    .hero {
+        min-height: auto;
+    }
+
+    .form-container {
+        padding: 30px 20px !important;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    form {
+        gap: 18px;
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+
+    input, textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 14px 16px;
+    }
+
+    textarea {
+        min-height: 140px;
+    }
+
+    button {
+        padding: 14px;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    /* Modal adjustments for mobile */
+    .modal {
+        width: 92%;
+        padding: 35px 20px;
+    }
+
+    .modal h3 {
+        font-size: 1.5rem;
+    }
+
+    .modal p {
+        font-size: 1rem;
+    }
+
+
+    /* Locations Section */
+    .locations {
+        height: auto;
+        padding: 60px 0;
+        display: block;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+
+    .locations-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        gap: 18px;
+        overflow-y: visible;
+    }
+
+    .location-card {
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        background: #fff;
+    }
+
+    .location-card h3 {
+        font-size: 1.4rem;
+        margin: 0 0 5px 0;
+        color: #2c3e50;
+    }
+
+    .location-card p:first-of-type {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    .side-panel {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #ddd;
+        padding: 30px 20px;
+        background: #f9f9f9;
+        min-height: 400px;
+    }
+
+    .side-panel h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .side-panel > p {
+        text-align: center;
+        color: #555;
+        font-size: 0.95rem;
+    }
+
+    .map-container {
+        height: 380px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+}
+
+/* Medium devices: tablets (601px–1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Hero Section */
+    .hero {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-container {
+        padding: 50px 60px !important;
+    }
+
+    input, textarea {
+        padding: 14px 18px;
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 14px 20px;
+        font-size: 1.1rem;
+    }
+
+    .modal {
+        max-width: 450px;
+        padding: 40px 30px;
+    }
+
+
+
+    .locations {
+        height: auto;
+        padding: 80px 0;
+    }
+
+    .locations-container {
+        padding: 30px 10px;
+        gap: 25px;
+    }
+
+    .location-card {
+        padding: 25px;
+        border-radius: 14px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .location-card h3 {
+        font-size: 1.6rem;
+    }
+
+    .side-panel {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #ddd;
+        padding: 40px;
+        background: #f8f9fa;
+    }
+
+    .side-panel h2 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .map-container {
+        height: 500px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+}
+
+/* Extra large screens */
+@media (min-width: 1400px) {
+    /* Hero Section */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-container {
+        flex: 1;
+        padding: 60px 80px !important;
+    }
+
+    label {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    input, textarea {
+        padding: 16px 20px;
+        font-size: 1.05rem;
+        border-radius: 10px;
+    }
+
+    textarea {
+        min-height: 160px;
+    }
+
+    button {
+        padding: 16px 30px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+
+    /* Larger, more elegant modal */
+    .modal {
+        max-width: 500px;
+        padding: 50px 40px;
+        border-radius: 16px;
+    }
+
+    .modal h3 {
+        font-size: 1.8rem;
+    }
+
+    .modal p {
+        font-size: 1.1rem;
+    }
+
+
+
+    .locations {
+        height: auto;
+        padding: 0 80px;
+    }
+
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+        gap: 40px;
+    }
+
+    .locations-container {
+        gap: 25px;
+    }
+
+    .location-card {
+        padding: 30px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .location-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        background: #f0f8ff;
+    }
+
+    .location-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .side-panel {
+        padding: 50px;
+    }
+
+    .side-panel h2 {
+        font-size: 2.6rem;
+        color: #2c3e50;
+    }
+
+    .map-container {
+        height: 600px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+}

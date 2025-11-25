@@ -1,0 +1,513 @@
+/* RESPONSIVE STYLES */
+
+/* Small devices: phones (≤600px) */
+@media (max-width: 600px) {
+    /* Hero Section */
+    .hero {
+        min-height: auto;
+        padding-bottom: 40px;
+    }
+
+    .about-container {
+        padding: 20px 15px;
+        gap: 60px;
+    }
+
+    /* Stack image & content vertically */
+    .about-container .about-con {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* Remove right alignment class on mobile */
+    .about-container .about-image.right {
+        order: -1;
+    }
+
+    .about-container .about-image img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .about-container .about-content {
+        max-width: 100%;
+    }
+
+    .about-container .about-content .about-header .about-title {
+        font-size: 2rem !important;
+        text-align: left;
+    }
+
+    .about-container .about-description p {
+        text-align: left;
+    }
+
+
+    /* History Section */
+    .history{
+      padding: 60px 15px;
+    }
+
+    .timeline-title{
+        font-size: 2rem;
+    }
+
+    .timeline-desc{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .timeline-item.left{
+      padding: 20px 20px 20px 0;
+    }
+
+    .timeline-item.right{
+      padding: 20px 0 20px 20px;
+    }
+
+    .timeline-content h3{
+      font-size: 0.9rem;
+    }
+
+
+    /* Awards Section */
+    .awards {
+        padding: 60px 20px;
+    }
+
+    .award-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .award-title span {
+        font-size: 2.4rem;
+    }
+
+    .award-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        max-width: 100%;
+    }
+
+    .award-item {
+        width: 100%;
+        max-width: 320px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .award-image {
+        flex-shrink: 0;
+    }
+
+    .award-info {
+        text-align: center;
+    }
+
+    .award-info h4 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .award-info h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .award-info p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+
+    /* Other Business Section */
+    .other-businesses {
+        padding: 80px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .business-header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .business-title {
+        font-size: 2rem;
+    }
+
+    .business-description {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Hide logo + disable radial layout */
+    .coop-logo {
+        display: none !important;
+    }
+
+    .radial-container {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .business-node {
+        position: static !important;
+        transform: none !important;
+        width: 100%;
+        height: 140px;
+        font-size: 1rem;
+        padding: 16px;
+        border-radius: unset;
+    }
+
+    .business-node::after{
+        content: none;
+    }
+}
+
+/* Medium devices: tablets (601px–1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Hero Section */
+    .hero {
+        min-height: auto;
+    }
+
+    .about-container {
+        padding: 40px 30px;
+        gap: 80px;
+    }
+
+    .about-container .about-con {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-container .about-con:first-child {
+        flex-direction: column;
+    }
+
+    .about-container .about-con:last-child {
+        flex-direction: column-reverse;
+    }
+
+    .about-container .about-image {
+        text-align: center;
+    }
+
+    .about-container .about-image img {
+        width: 100%;
+        max-width: 600px;
+        height: 350px;
+    }
+
+    .about-container .about-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about-container .about-content .about-header .about-title {
+        font-size: 2.6rem;
+    }
+
+
+    /* History Section */
+    .history {
+        padding: 80px 40px;
+    }
+
+    .timeline-title {
+        font-size: 2.6rem;
+    }
+
+    .timeline-desc {
+        font-size: 1.1rem;
+    }
+
+    .timeline-item {
+        padding: 20px 30px;
+    }
+
+    .timeline-item.left {
+        padding-right: 50px;
+    }
+
+    .timeline-item.right {
+        padding-left: 50px;
+    }
+
+    .timeline-year {
+        font-size: 1.5rem;
+    }
+
+    .timeline-content {
+        padding: 22px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .timeline::before {
+        top: 70px;
+        height: calc(100% - 140px);
+    }
+
+
+    /* Awards Section */
+    .awards {
+        padding: 80px 40px;
+    }
+
+    .award-title {
+        font-size: 2.6rem;
+        margin-bottom: 60px;
+    }
+
+    .award-title span {
+        font-size: 3rem;
+    }
+
+    .award-container {
+        gap: 50px 60px;
+        max-width: 900px;
+    }
+
+    .award-item {
+        width: calc(50% - 30px);
+        /* 2 items per row on tablet */
+    }
+
+    .award-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .award-info h4 {
+        font-size: 1.6rem;
+    }
+
+    .award-info p {
+        font-size: 1rem;
+    }
+
+
+    /* Other Business Section */
+    .other-businesses {
+        padding: 80px 40px;
+        flex-direction: column;
+    }
+
+    .business-header {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .business-title {
+        font-size: 2.6rem;
+    }
+
+    /* Hide logo + switch to clean grid */
+    .coop-logo {
+        display: none !important;
+    }
+
+    .radial-container {
+        position: static;
+        width: 100%;
+        height: auto;
+        max-width: 800px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 30px 0;
+    }
+
+    .business-node {
+        position: static !important;
+        transform: none !important;
+        width: 100%;
+        height: 180px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border-radius: unset;
+    }
+
+    
+    .business-node::after{
+        content: none;
+    }
+}
+
+/* Extra large screens */
+@media (min-width: 1400px) {
+    /* Hero Section */
+    .about-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 60px 40px;
+        gap: 120px;
+    }
+
+    .about-container .about-con {
+        gap: 80px;
+    }
+
+    .about-container .about-image img {
+        width: 550px;
+        height: 420px;
+    }
+
+    .about-container .about-content .about-header .about-title {
+        font-size: 3rem;
+    }
+
+    .about-container .about-content .about-description p {
+        font-size: 1.1rem;
+        line-height: 1.9;
+    }
+
+
+    /* History Section */
+    .history {
+        padding: 120px 80px;
+        gap: 40px;
+    }
+
+    .timeline-title {
+        font-size: 3rem;
+    }
+
+    .timeline-desc {
+        font-size: 1.1rem;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .timeline-item {
+        padding: 30px 60px;
+    }
+
+    .timeline-content {
+        padding: 30px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .timeline-year {
+        font-size: 1.8rem;
+    }
+
+    .timeline-item.right .timeline-year{
+        left: -120px;
+    }
+
+    .timeline-item.left .timeline-year{
+        right: -120px;
+    }
+
+    .timeline-item::before {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    /* Awards Section */
+    .awards {
+        padding: 120px 80px;
+    }
+
+    .award-title {
+        font-size: 3rem;
+        margin-bottom: 80px;
+    }
+
+    .award-title span {
+        font-size: 3.6rem;
+    }
+
+    .award-container {
+        max-width: 1300px;
+        gap: 60px 100px;
+    }
+
+    .award-item {
+        width: 420px;
+        gap: 30px;
+    }
+
+    .award-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .award-info h4 {
+        font-size: 2rem;
+    }
+
+    .award-info h4::after {
+        width: 50px;
+        height: 3px;
+    }
+
+    .award-info p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+
+    /* Other Business Section */
+    .other-businesses {
+        padding: 120px 80px;
+        gap: 60px;
+    }
+
+    .business-header {
+        width: 40%;
+    }
+
+    .business-title {
+        font-size: 3rem;
+    }
+
+    .business-description {
+        font-size: 1.1rem;
+    }
+
+    .radial-container {
+        width: 700px;
+        height: 700px;
+    }
+
+    .coop-logo {
+        width: 180px;
+        height: 180px;
+        font-size: 2rem;
+    }
+
+    .business-node {
+        width: 170px;
+        height: 170px;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    /* Slightly push nodes further out for drama */
+    #node1 { top: 5%; }
+    #node2 { right: 5%; }
+    #node3 { bottom: 5%; }
+    #node4 { left: 5%; }
+}

@@ -8,33 +8,47 @@
         </div>
 
         <!-- Loan Carousel -->
-        <div class="loans-carousel" id="loanCarousel">
-            <button class="carousel-btn prev" onclick="scrollCarousel(-1)">&#10094;</button>
+        <div class="loans-carousel-container">
+            <button class="carousel-btn prev-btn" onclick="scrollCarousel(-1)" aria-label="Previous loans">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </button>
 
-            <div class="loans-wrapper" id="loanWrapper">
-                @php
-                    $loans = [
-                        ['name' => 'Productive Loan', 'max' => 500000, 'term' => '12-36 months', 'interest' => '1.5% per month', 'desc' => 'For business expansion and capital needs.'],
-                        ['name' => 'Providential Loan', 'max' => 300000, 'term' => '6-24 months', 'interest' => '1.8% per month', 'desc' => 'Multi-purpose emergency loan.'],
-                        ['name' => 'Educational Loan', 'max' => 200000, 'term' => '12 months', 'interest' => '1.2% per month', 'desc' => 'For tuition and school-related expenses.'],
-                        ['name' => 'Business Car Loan', 'max' => 2000000, 'term' => '24-60 months', 'interest' => '1.3% per month', 'desc' => 'Finance your business vehicle.'],
-                        ['name' => 'Motorcycle Loan', 'max' => 150000, 'term' => '12-24 months', 'interest' => '2% per month', 'desc' => 'Get your dream bike with easy terms.'],
-                        ['name' => 'Jewelry Pledge Loan', 'max' => 1000000, 'term' => '3-12 months', 'interest' => '2.5% per month', 'desc' => 'Instant cash using jewelry as collateral.'],
-                        ['name' => 'Medical/Emergency Loan', 'max' => 100000, 'term' => '6-12 months', 'interest' => '1.5% per month', 'desc' => 'For urgent medical and emergency needs.'],
-                        ['name' => 'Petty Cash Loan', 'max' => 50000, 'term' => '3-6 months', 'interest' => '2% per month', 'desc' => 'Small amount for immediate needs.'],
-                        ['name' => 'Pensioner\'s Pledge Loan', 'max' => 200000, 'term' => '12 months', 'interest' => '1.8% per month', 'desc' => 'Exclusive for senior citizens.'],
-                        ['name' => 'Promo Loan', 'max' => 300000, 'term' => '12-24 months', 'interest' => '1% per month (limited time)', 'desc' => 'Special low-rate promotion!'],
-                    ];
-                @endphp
+            <div class="loans-carousel" id="loanCarousel">
+                <div class="loans-wrapper" id="loanWrapper">
+                    @php
+                        $loans = [
+                            ['name' => 'Productive Loan', 'max' => 500000, 'term' => '12-36 months', 'interest' => '1.5% per month', 'desc' => 'For business expansion and capital needs.'],
+                            ['name' => 'Providential Loan', 'max' => 300000, 'term' => '6-24 months', 'interest' => '1.8% per month', 'desc' => 'Multi-purpose emergency loan.'],
+                            ['name' => 'Educational Loan', 'max' => 200000, 'term' => '12 months', 'interest' => '1.2% per month', 'desc' => 'For tuition and school-related expenses.'],
+                            ['name' => 'Business Car Loan', 'max' => 2000000, 'term' => '24-60 months', 'interest' => '1.3% per month', 'desc' => 'Finance your business vehicle.'],
+                            ['name' => 'Motorcycle Loan', 'max' => 150000, 'term' => '12-24 months', 'interest' => '2% per month', 'desc' => 'Get your dream bike with easy terms.'],
+                            ['name' => 'Jewelry Pledge Loan', 'max' => 1000000, 'term' => '3-12 months', 'interest' => '2.5% per month', 'desc' => 'Instant cash using jewelry as collateral.'],
+                            ['name' => 'Medical/Emergency Loan', 'max' => 100000, 'term' => '6-12 months', 'interest' => '1.5% per month', 'desc' => 'For urgent medical and emergency needs.'],
+                            ['name' => 'Petty Cash Loan', 'max' => 50000, 'term' => '3-6 months', 'interest' => '2% per month', 'desc' => 'Small amount for immediate needs.'],
+                            ['name' => 'Pensioner\'s Pledge Loan', 'max' => 200000, 'term' => '12 months', 'interest' => '1.8% per month', 'desc' => 'Exclusive for senior citizens.'],
+                            ['name' => 'Promo Loan', 'max' => 300000, 'term' => '12-24 months', 'interest' => '1% per month (limited time)', 'desc' => 'Special low-rate promotion!'],
+                        ];
+                    @endphp
 
-                @foreach($loans as $index => $loan)
-                    <div class="loans-item" onclick="openLoanDetail({{ $index }})" style="cursor: pointer;">
-                        <h3 class="loans-name">{{ $loan['name'] }}</h3>
-                    </div>
-                @endforeach
+                    @foreach($loans as $index => $loan)
+                        <div class="loans-item" onclick="openLoanDetail({{ $index }})">
+                            <div class="loan-card">
+                                <h3 class="loans-name">{{ $loan['name'] }}</h3>
+                                <p class="loan-max">Up to ₱{{ number_format($loan['max']) }}</p>
+                                <span class="loan-interest">{{ $loan['interest'] }}</span>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
             </div>
 
-            <button class="carousel-btn next" onclick="scrollCarousel(1)">&#10095;</button>
+            <button class="carousel-btn next-btn" onclick="scrollCarousel(1)" aria-label="Next loans">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </button>
         </div>
 
         <!-- Loan Detail Overlay (hidden by default) -->
@@ -65,7 +79,6 @@
 </section>
 
 <style>
-/* Existing CSS remains unchanged, just adding new styles */
 
 .loan-detail-overlay {
     display: none;
@@ -189,67 +202,76 @@
     border-radius: 8px;
     margin-top: 20px;
     white-space: pre-wrap;
-    font-family: monospace;
     border-left: 4px solid #1a5d1a;
 }
 </style>
 
 <script>
-// Loan data (must match the PHP array above)
-const loanData = @json($loans);
+    const loanData = @json($loans);
 
-function scrollCarousel(direction) {
-    const wrapper = document.getElementById('loanWrapper');
-    const scrollAmount = 320;
-    wrapper.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-}
 
-function openLoanDetail(index) {
-    const loan = loanData[index];
-    document.getElementById('detailTitle').textContent = loan.name;
-    document.getElementById('detailDesc').textContent = loan.desc;
-    document.getElementById('detailMax').textContent = '₱' + loan.max.toLocaleString();
-    document.getElementById('detailTerm').textContent = loan.term;
-    document.getElementById('detailInterest').textContent = loan.interest;
+    function scrollCarousel(direction) {
+        const wrapper = document.getElementById('loanWrapper');
+        const cardWidth = 324; // 300px card + 24px gap
+        const scrollAmount = cardWidth * 2; // Show ~2 cards at a time on desktop
 
-    document.getElementById('amount').value = '';
-    document.getElementById('result').textContent = '';
-
-    document.getElementById('loanDetailOverlay').classList.add('active');
-}
-
-function closeLoanDetail() {
-    document.getElementById('loanDetailOverlay').classList.remove('active');
-    setTimeout(() => {
-        document.getElementById('loanCarousel').style.display = 'block';
-    }, 400);
-}
-
-// Your existing calculator (unchanged)
-function computeDeductions() {
-    const amount = parseFloat(document.getElementById('amount').value);
-    const result = document.getElementById('result');
-
-    if (isNaN(amount) || amount <= 0) {
-        result.textContent = "Please enter a valid amount";
-        return;
+        wrapper.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth'
+        });
     }
 
-    const serviceFee = amount * 0.02;
-    const filingFee = 100;
-    const shareCapital = amount * 0.03;
+    function openLoanDetail(index) {
+        const loan = loanData[index];
+        document.getElementById('detailTitle').textContent = loan.name;
+        document.getElementById('detailDesc').textContent = loan.desc;
+        document.getElementById('detailMax').textContent = '₱' + loan.max.toLocaleString();
+        document.getElementById('detailTerm').textContent = loan.term;
+        document.getElementById('detailInterest').textContent = loan.interest;
 
-    const totalDeductions = serviceFee + filingFee + shareCapital;
-    const netAmount = amount - totalDeductions;
+        document.getElementById('amount').value = '';
+        document.getElementById('result').textContent = '';
 
-    const output = `
-Entered Amount:     ₱${amount.toLocaleString('en-US', {minimumFractionDigits: 2})}
-Service Fee (2%):   ₱${serviceFee.toLocaleString('en-US', {minimumFractionDigits: 2})}
-Filing Fee:         ₱${filingFee.toLocaleString('en-US', {minimumFractionDigits: 2})}
-Share Capital (3%): ₱${shareCapital.toLocaleString('en-US', {minimumFractionDigits: 2})}
-Net Proceeds:       ₱${netAmount.toLocaleString('en-US', {minimumFractionDigits: 2})}
-    `;
+        const overlay = document.getElementById('loanDetailOverlay');
+        overlay.classList.add('active');
 
-    result.textContent = output;
-}
+        // ADD THIS LINE — Disable body scroll
+        document.body.classList.add('modal-open');
+    }
+
+    function closeLoanDetail() {
+        const overlay = document.getElementById('loanDetailOverlay');
+        overlay.classList.remove('active');
+
+        // REMOVE THIS LINE — Re-enable body scroll
+        document.body.classList.remove('modal-open');
+    }
+
+    // Your existing calculator (unchanged)
+    function computeDeductions() {
+        const amount = parseFloat(document.getElementById('amount').value);
+        const result = document.getElementById('result');
+
+        if (isNaN(amount) || amount <= 0) {
+            result.textContent = "Please enter a valid amount";
+            return;
+        }
+
+        const serviceFee = amount * 0.02;
+        const filingFee = 100;
+        const shareCapital = amount * 0.03;
+
+        const totalDeductions = serviceFee + filingFee + shareCapital;
+        const netAmount = amount - totalDeductions;
+
+        const output = `
+    Entered Amount: ₱${amount.toLocaleString('en-US', {minimumFractionDigits: 2})}
+    Service Fee (2%): ₱${serviceFee.toLocaleString('en-US', {minimumFractionDigits: 2})}
+    Filing Fee: ₱${filingFee.toLocaleString('en-US', {minimumFractionDigits: 2})}
+    Share Capital (3%): ₱${shareCapital.toLocaleString('en-US', {minimumFractionDigits: 2})}
+    Net Proceeds: ₱${netAmount.toLocaleString('en-US', {minimumFractionDigits: 2})}
+        `;
+
+        result.textContent = output;
+    }
 </script>
