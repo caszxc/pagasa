@@ -14,3 +14,7 @@
     @include('pages.membership.downloadable')
 @endsection
 
+@section('scripts')
+    <script src="{{ asset('js/membership.js') }}"></script>
+@endsection
+

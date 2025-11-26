@@ -1,6 +1,6 @@
 <section class="savings" id="savings">
     <div class="savings-content">
-        <div class="savings-header">
+        <div class="savings-header" data-aos="fade-up">
             <h2 class="savings-title">Savings</h2>
             <p class="savings-description">
                 Build your financial future with our diverse savings options, designed for security and growth.
@@ -9,7 +9,8 @@
 
         <div class="savings-card-container">
             <div class="group-row">
-                <div class="savings-card share">
+                <div class="savings-card share" data-aos="flip-left"
+                     data-aos-delay="100">
                     <div class="card-inner">
                         <div class="card-front">
                             <h3 class="savings-name">SHARE CAPITAL</h3>
@@ -20,7 +21,8 @@
                     </div>
                 </div>
 
-                <div class="savings-card deposit">
+                <div class="savings-card deposit" data-aos="flip-left"
+                     data-aos-delay="200">
                     <div class="card-inner">
                         <div class="card-front">
                             <h3 class="savings-name">SAVINGS DEPOSIT</h3>
@@ -33,7 +35,8 @@
             </div>
 
             <div class="group-row">
-                <div class="savings-card kiddie">
+                <div class="savings-card kiddie" data-aos="flip-left"
+                     data-aos-delay="300">
                     <div class="card-inner">
                         <div class="card-front">
                             <h3 class="savings-name">KIDDIE SAVERS</h3>
@@ -44,7 +47,8 @@
                     </div>
                 </div>
 
-                <div class="savings-card time">
+                <div class="savings-card time" data-aos="flip-left"
+                     data-aos-delay="400">
                     <div class="card-inner">
                         <div class="card-front">
                             <h3 class="savings-name">TIME DEPOSIT</h3>
