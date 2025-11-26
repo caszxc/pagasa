@@ -1,13 +1,13 @@
 <section class="member-benefits">
     <div class="benefits-container">
-        <div class="benefits-header">
+        <div class="benefits-header" data-aos="fade-right">
             <h2 class="benefits-title">Membership Benefits</h2>
             <p class="benefits-description">
                 As a valued member, you gain access to financial growth, protection, and community support designed to uplift your livelihood and future.
             </p>
         </div>
 
-        <div class="benefits-list">
+        <div class="benefits-list" data-aos="fade-up" data-aos-delay="200">
             <!-- First Row -->
             <div class="benefits-row">
                 <div class="benefit-item">
@@ -39,7 +39,7 @@
             </div>
 
             <!-- Last Row -->
-            <div class="benefits-row">
+            <div class="benefits-row" >
                 <div class="benefit-item">
                     <div class="benefit-icon">
                         <img src="{{asset('images/icons/insurance-icon.png')}}" alt="Insurance">

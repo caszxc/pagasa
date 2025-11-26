@@ -172,7 +172,7 @@
 
 .image-slider .slides {
     display: flex;
-    min-height: 600px;
+    max-height: 350px;
     transition: transform 0.6s ease-in-out;
 }
 
@@ -542,6 +542,7 @@
 
 .offers .offers-container .offers-header .offers-description{
     color: #222;
+    max-width: 900px;
     text-align: center;
 }
 

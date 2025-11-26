@@ -1,5 +1,5 @@
 <section class="cta">
-    <div class="cta-container">
+    <div class="cta-container" data-aos="zoom-in">
 
         <!-- Header -->
         <div class="cta-header">
@@ -11,7 +11,7 @@
 
         <!-- CTA Button with Pulse Effect -->
         <a href="{{ route('membership') }}"
-           class="cta-btn pulse-btnfade-up">
+           class="cta-btn pulse-btnfade-up" data-aos="fade-up" data-aos-delay="100">
             Become a Member Today
         </a>
 

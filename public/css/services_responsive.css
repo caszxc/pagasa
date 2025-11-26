@@ -178,6 +178,14 @@
         font-size: 1rem;
     }
 
+    .detail-title{
+        font-size: 1.4rem !important;
+    }
+
+    .detail-desc{
+        font-size: 1rem !important;
+    }
+
     #result {
         font-size: 0.9rem;
     }   

@@ -4,11 +4,8 @@
 @media (max-width: 600px) {
     /* Hero Section */
     .hero {
-        min-height: 100vh;
-        min-height: 100dvh;
         height: auto;
-        padding: 100px 20px 80px;
-        background-attachment: scroll;
+        padding: 140px 20px;
     }
 
     .hero .container {
@@ -53,7 +50,6 @@
         flex-direction: column;
         gap: 40px;
         padding-top: 60px;
-        padding-bottom: 40px;
     }
 
     .about .about-image {
@@ -96,7 +92,7 @@
     }
 
     .about .container .mvc-container {
-        padding: 60px 0;
+        padding: 50px 0;
         gap: 60px;
     }
 
@@ -427,7 +423,7 @@
     .about .container .mvc-container .mvc-card-container {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 60px;
+        gap: 80px;
         padding: 0 40px;
     }
 

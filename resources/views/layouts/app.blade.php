@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
-
-    <!-- AOS CSS -->
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Page-specific CSS -->
     @yield('styles')
 </head>
@@ -31,8 +31,22 @@
 
     <script src="{{ asset('js/main.js') }}"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Page-specific scripts -->
     @yield('scripts')
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,        // Animation happens only once
+            offset: 100
+        });
+        
+    </script>
+    
     
 </body>
 </html>

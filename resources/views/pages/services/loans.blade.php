@@ -19,16 +19,16 @@
                 <div class="loans-wrapper" id="loanWrapper">
                     @php
                         $loans = [
-                            ['name' => 'Productive Loan', 'max' => 500000, 'term' => '12-36 months', 'interest' => '1.5% per month', 'desc' => 'For business expansion and capital needs.'],
-                            ['name' => 'Providential Loan', 'max' => 300000, 'term' => '6-24 months', 'interest' => '1.8% per month', 'desc' => 'Multi-purpose emergency loan.'],
-                            ['name' => 'Educational Loan', 'max' => 200000, 'term' => '12 months', 'interest' => '1.2% per month', 'desc' => 'For tuition and school-related expenses.'],
-                            ['name' => 'Business Car Loan', 'max' => 2000000, 'term' => '24-60 months', 'interest' => '1.3% per month', 'desc' => 'Finance your business vehicle.'],
-                            ['name' => 'Motorcycle Loan', 'max' => 150000, 'term' => '12-24 months', 'interest' => '2% per month', 'desc' => 'Get your dream bike with easy terms.'],
-                            ['name' => 'Jewelry Pledge Loan', 'max' => 1000000, 'term' => '3-12 months', 'interest' => '2.5% per month', 'desc' => 'Instant cash using jewelry as collateral.'],
-                            ['name' => 'Medical/Emergency Loan', 'max' => 100000, 'term' => '6-12 months', 'interest' => '1.5% per month', 'desc' => 'For urgent medical and emergency needs.'],
-                            ['name' => 'Petty Cash Loan', 'max' => 50000, 'term' => '3-6 months', 'interest' => '2% per month', 'desc' => 'Small amount for immediate needs.'],
-                            ['name' => 'Pensioner\'s Pledge Loan', 'max' => 200000, 'term' => '12 months', 'interest' => '1.8% per month', 'desc' => 'Exclusive for senior citizens.'],
-                            ['name' => 'Promo Loan', 'max' => 300000, 'term' => '12-24 months', 'interest' => '1% per month (limited time)', 'desc' => 'Special low-rate promotion!'],
+                            ['name' => 'Productive Loan', 'max' => 0, 'term' => '0 months', 'interest' => '1.75%', 'desc' => 'For business expansion and capital needs.'],
+                            ['name' => 'Providential Loan', 'max' => 0, 'term' => '0 months', 'interest' => '1.75%', 'desc' => 'Multi-purpose emergency loan.'],
+                            ['name' => 'Educational Loan', 'max' => 0, 'term' => '0 months', 'interest' => '1.75%', 'desc' => 'For tuition and school-related expenses.'],
+                            ['name' => 'Business Car Loan', 'max' => 1500000, 'term' => '36 months', 'interest' => '1.5%', 'desc' => 'Finance your business vehicle.'],
+                            ['name' => 'Motorcycle Loan', 'max' => 130000, 'term' => '24 months', 'interest' => '1.5%', 'desc' => 'Get your dream bike with easy terms.'],
+                            ['name' => 'Jewelry Pledge Loan', 'max' => 0, 'term' => '0 months', 'interest' => '0%', 'desc' => 'Instant cash using jewelry as collateral.'],
+                            ['name' => 'Medical/Emergency Loan', 'max' => 5000, 'term' => '5 months', 'interest' => '2.5%', 'desc' => 'For urgent medical and emergency needs.'],
+                            ['name' => 'Petty Cash Loan', 'max' => 2000, 'term' => '2 months', 'interest' => '2.5%', 'desc' => 'Small amount for immediate needs.'],
+                            ['name' => 'Pensioner\'s Pledge Loan', 'max' => 0, 'term' => '0 months', 'interest' => '1.5%', 'desc' => 'Exclusive for senior citizens.'],
+                            ['name' => 'Promo Loan', 'max' => 0, 'term' => '0 months', 'interest' => '1%', 'desc' => 'Special low-rate promotion!'],
                         ];
                     @endphp
 
@@ -66,12 +66,25 @@
                 </div>
 
                 <div class="calculator-section">
-                    <h3>Loan Calculator</h3>
+                    <h3>Loan Proceeds Calculator</h3>
+                    <p style="color: #e74c3c; font-size: 0.95rem; margin-bottom: 15px;">
+                        <strong>Note:</strong> The amount of loan proceeds may have deductibles.<br>
+                        Final approval and exact net proceeds are subject to the assessment of the head officer.
+                    </p>
+
                     <label for="amount">Enter Desired Amount (₱):</label>
-                    <input type="number" id="amount" placeholder="ex. 50000" step="1000" min="10000">
+                    <input type="number" id="amount" placeholder="ex. 50000" step="100" min="3000">
+
                     <button onclick="computeDeductions()">Calculate Net Proceeds</button>
 
                     <pre id="result"></pre>
+
+                    <div style="margin-top: 20px; padding: 15px; background: #fff8e1; border-radius: 8px; font-size: 0.9rem; color: #856404;">
+                        <strong>Important:</strong><br>
+                        • The approval of the loan will be based on the assessment of the head officer.<br>
+                        • Loan proceeds may be subject to deductions (Service Fee, Filing Fee, Share Capital, and S/D Deduction).<br>
+                        • This calculator is for estimation purposes only.
+                    </div>
                 </div>
             </div>
         </div>
@@ -257,20 +270,49 @@
             return;
         }
 
-        const serviceFee = amount * 0.02;
-        const filingFee = 100;
-        const shareCapital = amount * 0.03;
+        if (amount < 3000) {
+            result.textContent = "Minimum loan amount is ₱3,000";
+            return;
+        }
 
-        const totalDeductions = serviceFee + filingFee + shareCapital;
+        // SERVICE FEE & FIXED FEES
+        const serviceFee = amount * 0.02;     // 2%
+        const filingFee = 100;                // Fixed
+        const shareCapital = amount * 0.03;   // 3%
+
+        // S/D DEDUCTION TABLE (tiered)
+        let sdDeduction = 0;
+
+        if (amount >= 3000 && amount <= 4999.99) sdDeduction = 200;
+        else if (amount >= 5000 && amount <= 9999.99) sdDeduction = 300;
+        else if (amount >= 10000 && amount <= 19999.99) sdDeduction = 400;
+        else if (amount >= 20000 && amount <= 29999.99) sdDeduction = 500;
+        else if (amount >= 30000 && amount <= 39999.99) sdDeduction = 600;
+        else if (amount >= 40000 && amount <= 49999.99) sdDeduction = 700;
+        else if (amount >= 50000 && amount <= 59999.99) sdDeduction = 800;
+        else if (amount >= 60000 && amount <= 69999.99) sdDeduction = 900;
+        else if (amount >= 70000 && amount <= 79999.99) sdDeduction = 1000;
+        else if (amount >= 80000 && amount <= 89999.99) sdDeduction = 1100;
+        else if (amount >= 90000 && amount <= 99999.99) sdDeduction = 1200;
+        else if (amount >= 100000 && amount <= 149999.99) sdDeduction = 1300;
+        else if (amount >= 150000 && amount <= 199999.99) sdDeduction = 1400;
+        else if (amount >= 200000) sdDeduction = 1500;
+
+        // TOTAL DEDUCTIONS
+        const totalDeductions = serviceFee + filingFee + shareCapital + sdDeduction;
         const netAmount = amount - totalDeductions;
 
+        // FORMATTED OUTPUT
         const output = `
-    Entered Amount: ₱${amount.toLocaleString('en-US', {minimumFractionDigits: 2})}
-    Service Fee (2%): ₱${serviceFee.toLocaleString('en-US', {minimumFractionDigits: 2})}
-    Filing Fee: ₱${filingFee.toLocaleString('en-US', {minimumFractionDigits: 2})}
-    Share Capital (3%): ₱${shareCapital.toLocaleString('en-US', {minimumFractionDigits: 2})}
-    Net Proceeds: ₱${netAmount.toLocaleString('en-US', {minimumFractionDigits: 2})}
-        `;
+Entered Amount: ₱${amount.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}
+Service Fee (2%): ₱${serviceFee.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}
+Filing Fee: ₱${filingFee.toFixed(2)}
+Share Capital (3%): ₱${shareCapital.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}
+S/D Deduction: ₱${sdDeduction.toFixed(2)}
+─────────────────────
+Total Deductions: ₱${totalDeductions.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}
+Net Proceeds: ₱${netAmount.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}
+        `.trim();
 
         result.textContent = output;
     }

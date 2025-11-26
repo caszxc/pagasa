@@ -1,12 +1,12 @@
-<section class="about">
+<section class="about" data-aos="fade">
     <div class="container">
-        <div class="about-container">
+        <div class="about-container" data-aos="fade-up">
             <div class="about-image">
                 <div class="image-slider">
                     <div class="slides">
-                        <img src="{{ asset('images/home/picture1.png') }}" alt="Cooperative Community">
-                        <img src="{{ asset('images/home/picture2.png') }}" alt="Member Success">
-                        <img src="{{ asset('images/home/picture3.png') }}" alt="Team & Growth">
+                        <img src="{{ asset('images/home/Picture1.png') }}" alt="Cooperative Community">
+                        <img src="{{ asset('images/home/Picture2.png') }}" alt="Member Success">
+                        <img src="{{ asset('images/home/Picture3.png') }}" alt="Team & Growth">
                     </div>
                     <div class="slider-dots">
                         <span class="dot active"></span>
@@ -16,13 +16,13 @@
                 </div>
                 
                 <div class="image-grid">
-                    <img src="{{ asset('images/home/picture3.png') }}" alt="About Image 1">
-                    <img src="{{ asset('images/home/picture2.png') }}" alt="About Image 2">
-                    <img src="{{ asset('images/home/picture1.png') }}" alt="About Image 3">
+                    <img src="{{ asset('images/home/Picture3.png') }}" alt="About Image 1">
+                    <img src="{{ asset('images/home/Picture2.png') }}" alt="About Image 2">
+                    <img src="{{ asset('images/home/Picture1.png') }}" alt="About Image 3">
                 </div>
             </div>
 
-            <div class="about-content">
+            <div class="about-content" data-aos="fade">
                 <div class="about-header">
                     <h4 class="about-subtitle">ABOUT US</h4>
                     <h2 class="about-title">Pagasa Multi-Purpose Cooperative</h2>
@@ -47,11 +47,11 @@
             </div>
         </div>
         <div class="mvc-container">
-            <div class="mvc-content">
+            <div class="mvc-content" data-aos="fade-up">
                 <h2 class="mvc-title">Our Mission, Vision, and Cooperative Values</h2>
                 <p class="mvc-description">Building trust and identity for our members.</p>
             </div>
-            <div class="mvc-card-container">
+            <div class="mvc-card-container" data-aos="zoom-in">
                 <div class="mvc-card">
                     <div class="mvc-icon">
                         <img src="{{asset('images/icons/mission-icon.png')}}" alt="Mission Icon">
