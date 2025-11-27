@@ -1,6 +1,6 @@
 <section class="savings" id="savings">
     <div class="savings-content">
-        <div class="savings-header">
+        <div class="savings-header" data-aos="fade-down" data-aos-delay="200">
             <h2 class="savings-title">Savings</h2>
             <p class="savings-description">
                 Build your financial future with our diverse savings options, designed for security and growth.
@@ -9,7 +9,7 @@
 
         <div class="savings-card-container">
             <div class="group-row">
-                <div class="savings-card share" data-aos="flip-left"
+                <div class="savings-card share" data-aos="zoom-in"
                      data-aos-delay="100">
                     <div class="card-inner">
                         <div class="card-front">
@@ -21,7 +21,7 @@
                     </div>
                 </div>
 
-                <div class="savings-card deposit" data-aos="flip-left"
+                <div class="savings-card deposit" data-aos="zoom-in"
                      data-aos-delay="200">
                     <div class="card-inner">
                         <div class="card-front">
@@ -35,7 +35,7 @@
             </div>
 
             <div class="group-row">
-                <div class="savings-card kiddie" data-aos="flip-left"
+                <div class="savings-card kiddie" data-aos="zoom-in"
                      data-aos-delay="300">
                     <div class="card-inner">
                         <div class="card-front">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
 
-                <div class="savings-card time" data-aos="flip-left"
+                <div class="savings-card time" data-aos="zoom-in"
                      data-aos-delay="400">
                     <div class="card-inner">
                         <div class="card-front">

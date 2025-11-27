@@ -158,31 +158,28 @@ body.modal-open {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.savings-card.share .card-inner .card-front{
-    background: url('../images/services/card-share-front.jpg') no-repeat center center/cover;
-}
-
-.savings-card.deposit .card-inner .card-front{
-    background: url('../images/services/card-deposit-front.jpg') no-repeat center center/cover;
-}
-
-.savings-card.kiddie .card-inner .card-front{
-    background: url('../images/services/card-kiddie-front.jpg') no-repeat center center/cover;
-}
-
-.savings-card.time .card-inner .card-front{
-    background: url('../images/services/card-time-front.jpg') no-repeat center center/cover;
+.savings-card .card-inner .card-front{
+    background: url('../images/services/savings.png') no-repeat center center/cover;
 }
 
 .savings .savings-content .savings-card-container .group-row .savings-card .card-inner .card-back {
-  background: #3A7F4F;
-  color: #fff;
+  background: #fff;
+  border: 4px solid #3A7F4F;
+  color: #3A7F4F;
   transform: rotateY(180deg);
   text-align: center;
 }
 
 .savings .savings-content .savings-card-container .group-row .savings-card .savings-name{
+    position: relative;
+    z-index: 1;
+    margin: 0;
     font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.35);      /* optional dark overlay for better readability */
+    border-radius: 6px;
 }
 
 
@@ -268,7 +265,7 @@ body.modal-open {
     padding: 30px;
     height: 100%;
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    border: 1px solid #eee;
+    border: 4px solid #1a5d1a;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -276,7 +273,6 @@ body.modal-open {
 .loan-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(26, 93, 26, 0.15);
-    border-color: #1a5d1a;
 }
 
 .loans-name {
@@ -413,7 +409,7 @@ body.modal-open {
 
 .hex.active,
 .hex:active {
-    background: #2E6B3F !important;
+    background: #33b458 !important;
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(46, 107, 63, 0.6);
 }
@@ -550,72 +546,78 @@ body.modal-open {
 }
 
 .other-services .service-item.seminar{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/seminar.jpg') center / cover no-repeat;
+    background: url('../images/services/seminar.jpg') center / cover no-repeat;
 }
 
 .other-services .service-item.livelihood{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/livelihood.jpg') center / cover no-repeat;
+    background: url('../images/services/livelihood.jpg') center / cover no-repeat;
 }
 
 .other-services .service-item.community{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/community-service.jpg') center / cover no-repeat;
+    background: url('../images/services/community-service.jpg') center / cover no-repeat;
 }
 
 .other-services .service-item.financial{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/financial-literacy.jpg') center / cover no-repeat;
+    background: url('../images/services/financial-literacy.jpg') center / cover no-repeat;
 }
 
 .other-services .service-item.educational{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/educational-assistance.jpg') center / cover no-repeat;
+    background: url('../images/services/educational-assistance.jpg') center / cover no-repeat;
 }
 
 .other-services .service-item.products{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/members-product.jpg') center / cover no-repeat;
+    background: url('../images/services/members-product.jpg') center / cover no-repeat;
 }
 
 .other-services .service-item.puregold{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/puregold.jpg') center / cover no-repeat;
+    background: url('../images/services/puregold.jpg') center / cover no-repeat;
 }
 
 .other-services .service-item.sm{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/sm-gift.jpg') center / cover no-repeat;
+    background: url('../images/services/sm-gift.jpg') center / cover no-repeat;
 }
 
 .other-services .service-item.pmpc{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/purchase-card.jpg') center / cover no-repeat;
+    background: url('../images/services/purchase-card.jpg') center / cover no-repeat;
 }
 
 .other-services .service-item.rice{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/rice.png') center / cover no-repeat;
+    background: url('../images/services/rice.png') center / cover no-repeat;
 }
 
 .other-services .service-item.turmeric{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/turmeric.png') center / cover no-repeat;
+    background: url('../images/services/turmeric.png') center / cover no-repeat;
 }
 
 .other-services .service-item.honey{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/pure-honey.png') center / cover no-repeat;
+    background: url('../images/services/pure-honey.png') center / cover no-repeat;
 }
 
 .other-services .service-item.peanut{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/peanut-butter.png') center / cover no-repeat;
+    background: url('../images/services/peanut-butter.png') center / cover no-repeat;
 }
 
 .other-services .service-item.dishwashing{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/dishwashing-liquid.png') center / cover no-repeat;
+    background: url('../images/services/dishwashing-liquid.png') center / cover no-repeat;
 }
 
 .other-services .service-item.conditioner{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/fabric-conditioner.png') center / cover no-repeat;
+    background: url('../images/services/fabric-conditioner.png') center / cover no-repeat;
 }
 
 .other-services .service-item.detergent{
-    background: linear-gradient(to right, #5ba45ecc, rgba(34, 70, 38, 0.8)), url('../images/services/liquid-detergent.png') center / cover no-repeat;
+    background: url('../images/services/liquid-detergent.png') center / cover no-repeat;
 }
 
 .other-services .other-services-content .services-body .service-item:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-item h3{
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.35);
 }
 
 .other-services .other-services-content .services-body .service-item img {

@@ -39,7 +39,7 @@
     <script>
         // Initialize AOS
         AOS.init({
-            duration: 800,
+            duration: 600,
             easing: 'ease-out-cubic',
             once: true,        // Animation happens only once
             offset: 100

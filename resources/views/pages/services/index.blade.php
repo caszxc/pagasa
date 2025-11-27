@@ -5,10 +5,6 @@
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/services.css')}}">
     <link rel="stylesheet" href="{{ asset('css/services_responsive.css')}}">
-    <link rel="preload" as="image" href="{{ asset('images/services/card-share-front.jpg') }}">
-    <link rel="preload" as="image" href="{{ asset('images/services/card-deposit-front.jpg') }}">
-    <link rel="preload" as="image" href="{{ asset('images/services/card-kiddie-front.jpg') }}">
-    <link rel="preload" as="image" href="{{ asset('images/services/card-time-front.jpg') }}">
 @endsection
 
 @section('content')

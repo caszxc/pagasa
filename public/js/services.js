@@ -1,16 +1,20 @@
-// Savings Card Flip Effect
 const cards = document.querySelectorAll('.savings-card');
-  cards.forEach(card => {
-    card.addEventListener('click', () => {
-      // Flip the card
-      card.classList.add('flipped');
 
-      // Wait 5 seconds, then flip it back
-      setTimeout(() => {
-        card.classList.remove('flipped');
-      }, 5000); // ← change this number (milliseconds) for longer/shorter flip time
-    });
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    // If it's already flipped, flip back immediately
+    if (card.classList.contains('flipped')) {
+      card.classList.remove('flipped');
+      return;
+    }
+
+    card.classList.add('flipped');
+
+    setTimeout(() => {
+      card.classList.remove('flipped');
+    }, 5000);
   });
+});
 
 // Other Services Tab Switcher
 const tabs = document.querySelectorAll('.tab');
