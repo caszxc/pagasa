@@ -1,5 +1,5 @@
 <section class="qualification">
-    <div class="qualification-header">
+    <div class="qualification-header" data-aos="fade-down" data-aos-delay="200">
         <h2 class="title">Membership Requirements</h2>
         <p class="description">Basic qualifications for becoming a member of Pagasa Multi-Purpose Cooperative.</p>
     </div>
@@ -7,7 +7,7 @@
     <div class="req-container">
         <!-- First row -->
         <div class="req-group">
-            <div class="req-card">
+            <div class="req-card" data-aos="fade-right" data-aos-delay="100">
                 <div class="icon-con"><i class="fa fa-check"></i></div>
                 <div class="req-content">
                     <h4 class="req-name">Filipino Citizen</h4>
@@ -15,7 +15,7 @@
                 </div>
             </div>
 
-            <div class="req-card">
+            <div class="req-card" data-aos="fade-right" data-aos-delay="300">
                 <div class="icon-con"><i class="fa fa-check"></i></div>
                 <div class="req-content">
                     <h4 class="req-name">Resident of Valenzuela or Nearby Areas</h4>
@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-            <div class="req-card">
+            <div class="req-card" data-aos="fade-right" data-aos-delay="500">
                 <div class="icon-con"><i class="fa fa-check"></i></div>
                 <div class="req-content">
                     <h4 class="req-name">At Least 18 Years Old</h4>
@@ -34,7 +34,7 @@
 
         <!-- Second row -->
         <div class="req-group">
-            <div class="req-card">
+            <div class="req-card" data-aos="fade-left" data-aos-delay="700">
                 <div class="icon-con"><i class="fa fa-check"></i></div>
                 <div class="req-content">
                     <h4 class="req-name">With Source of Income</h4>
@@ -42,7 +42,7 @@
                 </div>
             </div>
 
-            <div class="req-card">
+            <div class="req-card" data-aos="fade-left" data-aos-delay="900">
                 <div class="icon-con"><i class="fa fa-check"></i></div>
                 <div class="req-content">
                     <h4 class="req-name">Good Judgment and Decision-Making</h4>

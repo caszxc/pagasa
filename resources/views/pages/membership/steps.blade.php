@@ -1,12 +1,12 @@
 <section class="membership-steps" id="membership">
   <div class="steps-container">
-    <div class="steps-header">
+    <div class="steps-header" data-aos="fade-down" data-aos-delay="200">
       <h2 class="section-title">How to Be a Member</h2>
       <p class="section-subtitle">Follow these easy steps to become part of our cooperative community.</p>
     </div>
 
     <div class="steps-timeline">
-      <div class="step">
+      <div class="step" data-aos="zoom-in-up" data-aos-delay="400">
         <div class="step-icon">
           <i class="fa-solid fa-clipboard-list"></i>
         </div>
@@ -20,7 +20,7 @@
         </div>
       </div>
 
-      <div class="step">
+      <div class="step" data-aos="zoom-in-up" data-aos-delay="700">
         <div class="step-icon">
           <i class="fa-solid fa-chalkboard-teacher"></i>
         </div>
@@ -33,7 +33,7 @@
         </div>
       </div>
 
-      <div class="step">
+      <div class="step" data-aos="zoom-in-up" data-aos-delay="1000">
         <div class="step-icon">
           <i class="fa-solid fa-user-check"></i>
         </div>

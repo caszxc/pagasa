@@ -1,7 +1,7 @@
 <section class="hero">
-    <div class="banner-container">
+    <div class="banner-container" data-aos="fade-down" data-aos-delay="200">
         @include('pages.components.banner', ['title' => 'SERVICES'])
-        <p class="banner-description">
+        <p class="banner-description" data-aos="fade" data-aos-delay="600">
             Discover the wide range of services our cooperative offers to support members’ growth and community development — 
             from financial assistance and livelihood programs to training and business opportunities.
         </p>
@@ -21,7 +21,7 @@
             <a href="{{ $item['href'] }}"
                class="circle"
                data-aos="zoom-in"
-               data-aos-delay="{{ 300 + $i * 150 }}">
+               data-aos-delay="{{ 800 + $i * 150 }}">
                 <img src="{{ asset($item['icon']) }}" alt="{{ $item['text'] }} Icon" class="circle-icon">
                 <span>{{ $item['text'] }}</span>
             </a>

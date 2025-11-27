@@ -6,6 +6,18 @@
     scrollbar-width: none;
 }
 
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: clip;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 /* Navbar Base Styles */
 nav {
     height: 70px;

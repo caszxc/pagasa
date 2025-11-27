@@ -2,14 +2,14 @@
     <div class="benefits-content">
         <div class="benefits-hex-grid">
             <div class="hex-row">
-                <div class="hex-wrapper">
+                <div class="hex-wrapper" data-aos="zoom-in" data-aos-delay="200">
                     <div class="hex active" 
                          data-title="Annual Dividend on Share Capital" 
                          data-text="Your investment grows every year through shared earnings.">
                         <img src="{{asset('images/icons/share-capital-icon.png')}}">
                     </div>
                 </div>
-                <div class="hex-wrapper">
+                <div class="hex-wrapper" data-aos="zoom-in" data-aos-delay="400">
                     <div class="hex" 
                          data-title="Patronage Refund" 
                          data-text="The more you avail of our services, the greater your reward.">
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="hex-row">
-                <div class="hex-wrapper">
+                <div class="hex-wrapper" data-aos="zoom-in" data-aos-delay="600">
                     <div class="hex" 
                          data-title="Savings and Time Deposit" 
                          data-text="Earn guaranteed interest with tax-free savings options.">
@@ -27,21 +27,21 @@
                 </div>
 
                 <div class="benefits-info">
-                    <h3 class="benefit-title">Share Capital</h3>
-                    <p class="benefit-description">
+                    <h3 class="benefit-title" data-aos="fade" data-aos-delay="1600">Share Capital</h3>
+                    <p class="benefit-description" data-aos="fade" data-aos-delay="1600">
                         Build ownership in the cooperative through your share contributions.
                     </p>
                 </div>
             </div>
             <div class="hex-row">
-                <div class="hex-wrapper">
+                <div class="hex-wrapper" data-aos="zoom-in" data-aos-delay="1000">
                     <div class="hex" 
                          data-title="Comprehensive Group Life Insurance" 
                          data-text="Enjoy peace of mind knowing you and your family are protected.">
                         <img src="{{asset('images/icons/insurance-icon.png')}}">
                     </div>
                 </div>
-                <div class="hex-wrapper">
+                <div class="hex-wrapper" data-aos="zoom-in" data-aos-delay="1200">
                     <div class="hex" 
                          data-title="Member Assistance" 
                          data-text="Receive care and support during times of need from your cooperative community.">
@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <div class="benefits-text">
+        <div class="benefits-text" data-aos="fade-right" data-aos-delay="400">
             <h2 class="benefits-title">Benefits</h2>
             <p class="benefits-description">
                 Enjoy exclusive rewards and protections as a valued member of our cooperative.

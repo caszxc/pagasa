@@ -1,6 +1,6 @@
 <section class="loans" id="loans">
     <div class="loans-content">
-        <div class="loans-header">
+        <div class="loans-header" data-aos="fade-down" data-aos-delay="200">
             <h2 class="loans-title">Loans</h2>
             <p class="loans-description">
                 Access a variety of loan products with competitive rates and flexible terms to meet your needs.
@@ -8,7 +8,7 @@
         </div>
 
         <!-- Loan Carousel -->
-        <div class="loans-carousel-container">
+        <div class="loans-carousel-container" data-aos="fade-up" data-aos-delay="400">
             <button class="carousel-btn prev-btn" onclick="scrollCarousel(-1)" aria-label="Previous loans">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M15 18l-6-6 6-6"/>
@@ -33,11 +33,14 @@
                     @endphp
 
                     @foreach($loans as $index => $loan)
-                        <div class="loans-item" onclick="openLoanDetail({{ $index }})">
+                        <div class="loans-item" 
+                             data-aos="zoom-in" 
+                             data-aos-delay="{{ 200 + ($index * 300) }}"
+                             onclick="openLoanDetail({{ $index }})">
                             <div class="loan-card">
                                 <h3 class="loans-name">{{ $loan['name'] }}</h3>
-                                <p class="loan-max">Up to ₱{{ number_format($loan['max']) }}</p>
-                                <span class="loan-interest">{{ $loan['interest'] }}</span>
+                                <p class="loan-max">Up to ₱{{ $loan['max'] > 0 ? number_format($loan['max']) : 'Flexible' }}</p>
+                                <span class="loan-interest">{{ $loan['interest'] }}/month</span>
                             </div>
                         </div>
                     @endforeach

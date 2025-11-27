@@ -1,9 +1,9 @@
 <section class="hero">
-    <div class="banner-container">
+    <div class="banner-container" data-aos="fade-down" data-aos-delay="200">
         @include('pages.components.banner', ['title' => 'CONTACT US'])
-        <p class="banner-description">Reach out to us for inquiries, assistance, or partnership opportunities. Find our office address, contact numbers, and online inquiry form to connect easily with our team.</p>
+        <p class="banner-description" data-aos="fade" data-aos-delay="600">Reach out to us for inquiries, assistance, or partnership opportunities. Find our office address, contact numbers, and online inquiry form to connect easily with our team.</p>
     </div>
-    <div class="form-container">
+    <div class="form-container" data-aos="fade" data-aos-delay="800">
         <form id="contactForm" action="https://formspree.io/f/mldpybny" method="POST">
             <!-- Replace the action URL with your own Formspree endpoint -->
             <label for="name">Full Name</label>

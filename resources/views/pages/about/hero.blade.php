@@ -1,18 +1,18 @@
 <section class="hero">
-    <div class="banner-container">
+    <div class="banner-container" data-aos="fade-down" data-aos-delay="200">
         @include('pages.components.banner', ['title' => 'ABOUT US'])
-        <p class="banner-description">
+        <p class="banner-description" data-aos="fade" data-aos-delay="600">
             Get to know our cooperative’s history, mission, and vision. Learn how we started, what we stand for, and how we continue to empower our members and community.
         </p>
     </div>
 
     <div class="about-container">
         <!-- What is Cooperative -->
-        <div class="about-con">
-            <div class="about-image">
+        <div class="about-con" data-aos="fade-right" data-aos-delay="800">
+            <div class="about-image" data-aos="zoom-in" data-aos-delay="1000">
                 <img src="{{ asset('images/home/about-pic.jpg')}}" alt="What is Cooperative">
             </div>
-            <div class="about-content">
+            <div class="about-content" data-aos="fade-left" data-aos-delay="1200">
                 <div class="about-header">
                     <h2 class="about-title">What is a Cooperative</h2>
                 </div>
@@ -25,8 +25,8 @@
         </div>
 
         <!-- Pagasa Multi-Purpose Cooperative -->
-        <div class="about-con">
-            <div class="about-content">
+        <div class="about-con" data-aos="fade-left">
+            <div class="about-content" data-aos="fade-right" data-aos-delay="100">
                 <div class="about-header">
                     <h2 class="about-title">Pagasa Multi-Purpose Cooperative</h2>
                 </div>
@@ -36,7 +36,7 @@
                     </p>
                 </div>
             </div>
-            <div class="about-image right">
+            <div class="about-image right" data-aos="zoom-in" data-aos-delay="500">
                 <img src="{{ asset('images/home/hero-bg.jpg')}}" alt="Pagasa Multi-Purpose Cooperative">
             </div>
         </div>

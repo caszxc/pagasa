@@ -1,6 +1,6 @@
 <section class="savings" id="savings">
     <div class="savings-content">
-        <div class="savings-header" data-aos="fade-up">
+        <div class="savings-header">
             <h2 class="savings-title">Savings</h2>
             <p class="savings-description">
                 Build your financial future with our diverse savings options, designed for security and growth.

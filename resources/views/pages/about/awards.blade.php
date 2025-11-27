@@ -1,10 +1,10 @@
 <section class="awards">
-    <div class="awards-header">
+    <div class="awards-header" data-aos="fade-down" data-aos-delay="200">
         <h2 class="award-title">Our <span>Award–winning</span> Journey</h2>
     </div>
 
     <div class="award-container">
-        <div class="award-item">
+        <div class="award-item" data-aos="fade" data-aos-delay="100">
             <div class="award-image">
                 <img src="images/awards/award-2025.png" alt="Award">
             </div>
@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        <div class="award-item">
+        <div class="award-item" data-aos="fade" data-aos-delay="300">
             <div class="award-image">
                 <img src="images/awards/award-2024.png" alt="Award">
             </div>
@@ -24,7 +24,7 @@
             </div>
         </div>
 
-        <div class="award-item">
+        <div class="award-item" data-aos="fade" data-aos-delay="500">
             <div class="award-image">
                 <img src="images/awards/award-2023.png" alt="Award">
             </div>

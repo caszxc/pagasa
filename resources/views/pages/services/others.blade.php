@@ -1,6 +1,6 @@
 <section class="other-services" id="others">
     <div class="other-services-content">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-down" data-aos-delay="200">
             <h2 class="section-title">Other Services</h2>
             <p class="section-description">
                 Explore our range of services and products to enhance your lifestyle and community engagement.
@@ -8,7 +8,7 @@
         </div>
 
         <div class="services-body">
-            <div class="services-labels">
+            <div class="services-labels" data-aos="fade-right" data-aos-delay="400">
                 <p class="tab active" data-target="services">Services</p>
                 <p class="tab" data-target="products">Products</p>
             </div>

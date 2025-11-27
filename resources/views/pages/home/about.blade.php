@@ -1,7 +1,7 @@
-<section class="about" data-aos="fade">
+<section class="about">
     <div class="container">
-        <div class="about-container" data-aos="fade-up">
-            <div class="about-image">
+        <div class="about-container">
+            <div class="about-image" data-aos="fade-right" data-aos-delay="200">
                 <div class="image-slider">
                     <div class="slides">
                         <img src="{{ asset('images/home/Picture1.png') }}" alt="Cooperative Community">
@@ -22,13 +22,13 @@
                 </div>
             </div>
 
-            <div class="about-content" data-aos="fade">
+            <div class="about-content" data-aos="fade-left" data-aos-delay="400">
                 <div class="about-header">
                     <h4 class="about-subtitle">ABOUT US</h4>
                     <h2 class="about-title">Pagasa Multi-Purpose Cooperative</h2>
                     <div class="about-line"></div>
                 </div>
-                <div class="about-description">
+                <div class="about-description" data-aos="fade-up" data-aos-delay="800">
                     <p>
                         Pagasa Multi-Purpose Cooperative (PMPC) is a member-owned organization
                         committed to empowering communities through sustainable financial and
@@ -38,7 +38,7 @@
                         future—rooted in trust, unity, and shared progress.
                     </p>
                 </div>
-                <div class="about-button">
+                <div class="about-button" data-aos="fade-up" data-aos-delay="1000">
                     <a href="{{ route('about') }}" class="learn-more-btn">
                         LEARN MORE
                         <i class="fas fa-arrow-right icon"></i>
@@ -47,11 +47,11 @@
             </div>
         </div>
         <div class="mvc-container">
-            <div class="mvc-content" data-aos="fade-up">
+            <div class="mvc-content" data-aos="fade-up" data-aos-delay="200">
                 <h2 class="mvc-title">Our Mission, Vision, and Cooperative Values</h2>
                 <p class="mvc-description">Building trust and identity for our members.</p>
             </div>
-            <div class="mvc-card-container" data-aos="zoom-in">
+            <div class="mvc-card-container" data-aos="flip-left" data-aos-delay="400">
                 <div class="mvc-card">
                     <div class="mvc-icon">
                         <img src="{{asset('images/icons/mission-icon.png')}}" alt="Mission Icon">
@@ -63,7 +63,7 @@
                     </p>
                 </div>
 
-                <div class="mvc-card">
+                <div class="mvc-card" data-aos="flip-up" data-aos-delay="600">
                     <div class="mvc-icon">
                         <img src="{{asset('images/icons/vision-icon.png')}}" alt="Vision Icon">
                     </div>
@@ -75,7 +75,7 @@
                     </p>
                 </div>
 
-                <div class="mvc-card">
+                <div class="mvc-card" data-aos="flip-right" data-aos-delay="800">
                     <div class="mvc-icon">
                         <img src="{{asset('images/icons/values-icon.png')}}" alt="Cooperative Values Icon">
                     </div>

@@ -1,16 +1,16 @@
 <section class="member-benefits">
     <div class="benefits-container">
-        <div class="benefits-header" data-aos="fade-right">
+        <div class="benefits-header" data-aos="fade-right" data-aos-delay="200">
             <h2 class="benefits-title">Membership Benefits</h2>
             <p class="benefits-description">
                 As a valued member, you gain access to financial growth, protection, and community support designed to uplift your livelihood and future.
             </p>
         </div>
 
-        <div class="benefits-list" data-aos="fade-up" data-aos-delay="200">
+        <div class="benefits-list">
             <!-- First Row -->
             <div class="benefits-row">
-                <div class="benefit-item">
+                <div class="benefit-item" data-aos="zoom-in-up" data-aos-delay="400">
                     <div class="benefit-icon">
                         <img src="{{asset('images/icons/share-capital-icon.png')}}" alt="Share Capital">
                     </div>
@@ -18,7 +18,7 @@
                     <p class="benefit-text">Your investment grows every year through shared earnings.</p>
                 </div>
 
-                <div class="benefit-item">
+                <div class="benefit-item" data-aos="zoom-in-up" data-aos-delay="600">
                     <div class="benefit-icon">
                         <img src="{{asset('images/icons/patronage-refund-icon.png')}}" alt="Patronage Refund">
                     </div>
@@ -29,7 +29,7 @@
 
             <!-- Center Row (Single Item) -->
             <div class="benefits-row center">
-                <div class="benefit-item">
+                <div class="benefit-item" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1000">
                     <div class="benefit-icon">
                         <img src="{{asset('images/icons/savings-icon.png')}}" alt="Savings">
                     </div>
@@ -40,7 +40,7 @@
 
             <!-- Last Row -->
             <div class="benefits-row" >
-                <div class="benefit-item">
+                <div class="benefit-item" data-aos="zoom-in-up" data-aos-delay="1000">
                     <div class="benefit-icon">
                         <img src="{{asset('images/icons/insurance-icon.png')}}" alt="Insurance">
                     </div>
@@ -48,7 +48,7 @@
                     <p class="benefit-text">Enjoy peace of mind knowing you and your family are protected.</p>
                 </div>
 
-                <div class="benefit-item">
+                <div class="benefit-item" data-aos="zoom-in-up" data-aos-delay="1200">
                     <div class="benefit-icon">
                         <img src="{{asset('images/icons/helping-hands-icon.png')}}" alt="Member Assistance">
                     </div>
